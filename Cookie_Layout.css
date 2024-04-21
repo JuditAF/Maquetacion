@@ -1,0 +1,151 @@
+
+.Presentacion_Exterior{
+    margin: 2px;
+    padding: 2px;
+    width: 30em;
+    height: 55em;
+    box-sizing: border-box;
+    outline: 2px, solid, grey;
+    border-width: 6px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: rgb(189, 178, 178);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.Banner {
+    width: 29em;
+    height: 13.5em;
+    margin: auto;
+    padding: 2px;
+    border-radius: 20px;
+}
+
+.Banner header {
+    height: 7.5em;
+    margin: auto;
+    padding: 0.5em;
+    border-width: 2px;
+    border-style: double;
+    border-radius: 20px;
+    border-color: rgb(104, 235, 133);
+}
+
+article {
+    align-content: flex-end;
+}
+
+.Banner nav {
+    height:3.5em;
+    margin-top: 4px;
+    padding: 0.5em;
+    border-width: 2px;
+    border-style: double;
+    border-radius: 20px;
+    border-color: rgb(241, 79, 174);
+}
+
+.Desarrollo_Cuerpo {
+    width: 29em;
+    height: 35em;
+    margin-top: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.Desarrollo_Cuerpo article {
+    width: 18em;
+    height: 33.5em;
+    margin-top: 3px;
+    padding: 0.5em;
+    border-width: 2px;
+    border-style: double;
+    border-radius: 20px;
+    border-color: rgb(41, 146, 231);
+}
+
+.Desarrollo_Cuerpo header {
+    height:3.5em;
+    margin-top: 4px;
+    padding: 0.5em;
+    border-width: 2px;
+    border-style: double;
+    border-radius: 20px;
+    border-color:rgb(104, 235, 133);
+}
+
+.Desarrollo_Cuerpo section {
+    height:3.5em;
+    margin-top: 4px;
+    margin-left: 0px;
+    padding: 0.5em;
+    border-width: 2px;
+    border-style: double;
+    border-radius: 20px;
+    border-color:rgb(236, 61, 236);
+}
+
+.Desarrollo_Cuerpo footer {
+    height:1.5em;
+    margin-top: 4px;
+    padding: 0.5em;
+    align-self: self-end;
+    border-width: 2px;
+    border-style: double;
+    border-radius: 20px;
+    border-color:rgb(225, 238, 46);
+}
+
+.Desarrollo_Cuerpo div {
+    width: 8em;
+    height: 34.5em;
+    margin-top: 3px;
+    margin-left: 3px;
+    border-width: 2px;
+    border-style: double;
+    border-radius: 20px;
+    border-color: rgb(241, 130, 79);
+}
+
+p { 
+    padding: 0.5em;
+}
+
+.Desarrollo_Cuerpo aside {
+    width: 6.2em;
+    height: 13.5em;
+    margin-top: 3px;
+    margin-left: 3px;
+    padding: 0.5em;
+    border-width: 2px;
+    border-style: double;
+    border-radius: 20px;
+    border-color: rgb(50, 213, 241);
+}
+
+.Pie_Pagina {
+    width: 29em;
+    height:3.5em;
+    margin-top: 3px;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    border-width: 2px;
+    border-style: double;
+    border-radius: 20px;
+    border-color: rgb(225, 238, 46);
+}
+
