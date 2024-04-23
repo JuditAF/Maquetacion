@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    font-size: 2vh;
+    background-color: black;
+}
+
+ul {
+    width: 100vw;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+a {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2vh;
+}
+
+.contenidoPrincipal {
+    height: 85vh;
+    margin-top: 0;
+    display: flex;
+    flex-flow: wrap;
+    align-content: flex-start;
+}
+
+h1 {
+    width: 100vw;
+    height: 13vh;
+    font-size: 5vh;
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuerpoArticulo {
+    width: 40vw;
+    height: 77vh;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-end;
+}
+
+.noticia {
+    width: 40vw;
+    height: 75vh;
+    font-size:1.5vh;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 2vh;
+    text-align: center;
+}
+
+.imagen {
+    width: 58vw;
+    height: 77.66vh;
+    padding: 7vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#img2 { 
+    width: 85vw;
+}
+
+.justificar {
+    text-align:center;
+}

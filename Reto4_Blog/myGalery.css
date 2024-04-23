@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    font-size: 2vh;
+    background-color: black;
+}
+
+ul {
+    width: 100vw;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+a {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2vh;
+}
+
+.contenidoPrincipal {
+    height: 85vh;
+    width: 98vw;
+}
+
+.grid-container {
+    width: 98vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32.66vw,1fr));
+    grid-gap: 0;
+    gap: 0;
+}
+
+.grid-item {
+    display: grid;
+    grid-gap: 0;
+    width: 32.66vw;
+    height: 42.5vh;
+    gap: 0;
+    background-color: aquamarine;
+}
+
+.item {
+    width: 34.666vw;
+    height: 50.5vh;
+    display: grid;
+    grid-gap: 0;
+}
