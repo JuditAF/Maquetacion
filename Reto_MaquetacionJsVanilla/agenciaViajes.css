@@ -1,0 +1,166 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vw;
+    width: 100vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    font-size: 3rem;
+    font-family: sourceCodePro_Uniquifier;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    padding: 3.5rem;
+    text-align: center;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: flex-start;
+}
+
+#logotipo {
+    font-size: 6vh;
+    font-weight: lighter;
+    text-decoration: wavy;
+    color: #ed3d63;
+    margin-top: 4vh;
+}
+
+h1 {
+    height: 4vh;
+    width: 100vw;
+    font-size: 2vh;
+    color: #179cb8;
+    text-shadow: #ffff89 3px 6px 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.companyIdentity {
+    width: 100vw;
+    height: 45vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: burlywood;
+}
+
+#destinos {
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(166, 45, 223);
+}
+
+#formulario {
+    width: 100vw;
+    height: 90vh;
+    background-color:#ed3d63;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+form {
+    padding: 4vh;
+}
+
+.field {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin: 0.5rem;
+}
+
+.field label {
+    font-size: 3rem;
+    margin-bottom: 2vh;
+}
+
+.field input {
+    font-size: 3rem;
+    height: 3vh;
+}
+
+input[type="checkbox"] {
+    width: 1.5vw;
+    height: 2vh;
+  }
+
+input[type="radio"] {
+    padding: 3px;
+}
+
+.field select {
+    font-size: 3rem;
+    height: 3vh;
+}
+
+#validar::after {
+    padding-left: 5px;
+}
+
+#fecha:invalid + #validar::after {
+    content: x;
+}
+
+#fecha:valid + #validar::after {
+    content: v;
+}
+
+.button {
+    background-color: #f6a700;
+    border: 1px solid #f67429;
+    border-radius: 15px;
+    box-shadow: #7e4400 1px 2px 4px;
+    box-sizing: border-box;
+    color: whitesmoke;
+    cursor: pointer;
+    display: inline-block;
+    font-family: sourceCodePro_Uniquifier;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16px;
+    min-height: 40px;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricPrecision;
+    text-transform:none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    transition: background-color 1s;
+}
+
+  .button:hover,
+  .button:focus,
+  
+  .button:active {
+    background-color: #179cb8;
+    border-color: #048a9c;
+    box-shadow: #005954
+    background-position: 0 0;
+    transition: none;
+  }
+
+.sourceCodePro_Uniquifier {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600px;
+  font-style: normal;
+}
