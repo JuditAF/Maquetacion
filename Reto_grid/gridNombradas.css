@@ -1,0 +1,140 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    padding: 4vh;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    height: 100vh;
+    width: 99vw;
+    padding: 2vh;
+}
+
+.cuadricula {
+    height: 90vh;
+    align-content: center;
+}
+
+.header {
+    background-color: black;
+    text-align: center;
+    align-content: center;
+    font-size: 4vh;
+    color: white;
+    height: 11.11vh;
+}
+
+.cuerpo {
+    height: 67.77vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.contenedorazul {
+    background-color: blue;
+    grid-template-rows: 1fr 2fr;
+    gap: 1vh;
+    padding: 2vh;
+}
+
+#contenido {
+    height: 33.33%;
+    color: white;
+    padding: 2vh;
+    font-size: 4vh;
+    border: 1px solid white;
+}
+
+#TEXTO {
+    height: 66.66%;
+    display: grid;
+    gap: 1vh;
+    grid-template-columns: 2fr 1fr;
+}
+
+#texto1 {
+    color: white;
+    padding: 2vh;
+    font-size: 2vh;
+    border: 1px solid white;
+    
+}
+
+#texto2 {
+    color: white;
+    padding: 2vh;
+    font-size: 2vh;
+    border: 1px solid white;
+   
+}
+
+.contenedorVerde {
+    background-color:rgb(29, 228, 178);
+    grid-template-rows: repeat(4, 1fr);
+    padding: 2vh;
+    display: grid;
+    gap: 1vh;
+}
+
+#MENU {
+    border: 1vh solid black;
+    color: white;
+    font-size: 4vh;
+    text-align: center;
+    align-content: center;
+}
+
+#menu1 {
+    background-color: black;
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+    align-content: center;
+}
+
+#menu2 {
+    background-color: black;
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+    align-content: center;
+}
+
+#menu3 {
+    background-color: black;
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+    align-content: center;
+}
+
+.piePagina {
+    background-color: purple;
+    height: 10vh;
+    padding: 1vh;
+    display: grid;
+    gap: 1vh;
+    grid-template-columns: 1fr 1fr;
+    font-size: 2vh;
+}
+
+.footer {
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+
+.contacto {
+    border: 3px solid black;
+    color: white;
+    text-align: center;
+    align-content: center;
+}

@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    padding: 4vh;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    padding: 2vh;
+    display: grid;
+}
+
+.gridArea {
+    display: grid;
+    grid-template-areas: 
+                    'head' 'head' 'head'
+                    'menuLateral' 'cuerpo' 'cuerpo'
+                    'footer' 'footer' 'footer';
+}
+
+.head {
+    width: 100vw;
+    height: 16.66%;
+    display: grid;
+    grid-template-areas: 
+                    'header' 'header' 'imagen';
+}
+
+.header {
+    grid-area: head;
+    background-color: #b31c14;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+
+.imagen {
+    grid-area: head;
+    background-color: #540c0c;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+
+.menuLateral {
+    grid-area: menuLateral;
+    height: 66.66%;
+    background-color: #fb6b24;
+    padding: 1vh;
+    display: grid;
+    grid-template-areas: 
+                    'aside'
+                    'vacio'
+                    'aside2';
+}
+
+.aside {
+    grid-area: menuLateral;
+    height: 33.33%;
+    background-color: white;
+    color: #fb6b24;
+    font-size: x-large;
+    text-align: center;
+}
+
+.vacio {
+    grid-area: menuLateral;
+    height: 33.33%;
+}
+
+.aside2 {
+    grid-area: menuLateral;
+    height: 33.33%;
+    background-color: white;
+    color: #fb6b24;
+    font-size: x-large;
+    text-align: center;
+}
+
+.cuerpo {
+    grid-area: cuerpo;
+    height: 66.66%;
+    background-color: #f03f1c;
+    padding: 1vh;
+    display: grid;
+    grid-template-areas: 
+                    'contenido'
+                    'texto';
+}
+
+.contenido {
+    grid-area: cuerpo;
+    height: 50%;
+    background-color: #f03f1c;
+    border: 1px solid white;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+
+.texto {
+    grid-area: cuerpo;
+    height: 50%;
+    background-color: #f03f1c;
+    border: 1px solid white;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+
+.footer {
+    height: 16.66%;
+    grid-area: footer;
+    background-color: #540c0c;
+    color: white;
+    text-align: center;
+}
