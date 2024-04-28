@@ -6,9 +6,6 @@
     <title>Agencia de Viajes</title>
     <link rel="icon" href="../Reto4_Blog/img/favicon1.png">
     <link rel="stylesheet" href="./agenciaViajes.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -31,83 +28,93 @@
 
         <section id="formulario">
 
-            <form name="formularioClientes" id="formularioClientes" method="get">
+            <form name="formularioClientes" id="formularioClientes" method="post"  action="./agenciaViajes.js">
 
                 <fieldset>
 
                     <legend>ÉNROLATE EN NUESTRO BARCO</legend>
 
                     <div class="field">
-                        <label for="">Aventurero/a</label>
-                        <input type="text" name="nombre" id="nombre" required placeholder="Introducce aquí tu nombre" autocomplete="name"/>
+                        <label for="nombre">Aventurero/a</label>
+                        <input type="text" name="nombre" id="nombre" required placeholder="Introducce aquí tu nombre" autocomplete="name" autofocus/>
                     </div>
 
                     <div class="field">
-                        <label for="">Compañía de Aventureros</label>
+                        <label for="numeroViajeros">Compañía de Aventureros</label>
                         <input type="number" name="numeroViajeros" id="numeroViajeros" min="1" max="100"/>
 
                     </div>
 
                     <div class="field"> 
-                        <label for="">Aventureros con Mascota</label>
-                        <label for="">
-                        <input type="radio" name="amigoAnimal" id="amigoAnimal" value="solitario"/>
+                        <legend>Aventureros con Mascota</legend>
+                        <label>
+                        <input type="radio" name="amigoAnimal" id="amigoAnimalNo" value="solitario"/>
                         No</label>
-                        <label for="">
-                        <input type="radio" name="amigoAnimal" id="amigoAnimal" value="bestFriend"/>
+                        <label>
+                        <input type="radio" name="amigoAnimal" id="amigoAnimalSi" value="bestFriend"/>
                         Si</label>
                     </div>
 
                     <div class="field"> 
-                        <label id="validar" for="">Escoge día para evitar malos Vientos</label>
+                        <label id="validar" for="fecha">Escoge día para evitar malos Vientos</label>
                         <input id="fecha" name="fecha" type="date"/>
                     </div>
 
                     <div class="field"> 
-                        <label for="">Punto de Encuentro</label>
-                        <select name="origen" id="origen" aria-placeholder="Selecciona Puerto">
+                        <legend>Punto de Encuentro</legend>
+                        <input type="list" name="salida" id="salida" list="origen">
+                        <datalist id="origen" name="origen" aria-placeholder="Selecciona Puerto">
                             <option selected disabled>Puerto de Enrole</option>
-                            <option value="puerto1">Almería</option>
-                            <option value="puerto2">Málaga</option>
-                            <option value="puerto3">Granada</option>
-                            <option value="puerto4">Murcia</option>
-                            <option value="puerto5">Alicante</option>
-                        </select>
+                            <option value="Almería"></option>
+                            <option value="Málaga"></option>
+                            <option value="Granada"></option>
+                            <option value="Murcia"></option>
+                            <option value="Alicante"></option>
+                        </datalist>
                     </div>
 
                     <div class="field"> 
-                        <label for="">Objetivo Destino</label>
+                        <label for="destino">Objetivo Destino</label>
                         <select name="destino" id="destino" aria-placeholder="Selecciona Aventura">
                             <option selected disabled>Marca el Rumbo</option>
-                            <option value="nacional1">Galicia</option>
-                            <option value="nacional2">sevilla</option>
-                            <option value="nacional3">Ronda</option>
-                            <option value="nacional4">Canarias</option>
-                            <option value="nacional5">Santiago de Compostela</option>
-                            <option value="internacional1">Alpes suizos</option>
-                            <option value="internacional2">Escocia</option>
-                            <option value="internacional3">Chaouen</option>
-                            <option value="internacional4">Sahara</option>
-                            <option value="internacional5">Japón</option>
-                            <option value="internacional6">Camboya</option>
-                            <option value="internacional7">La Ponia</option>
-                            <option value="internacional8">Croacia</option>
+                            <optgroup label="Destino Nacional">
+                                <option value="Galicia">Galicia</option>
+                                <option value="sevilla">sevilla</option>
+                                <option value="Ronda">Ronda</option>
+                                <option value="Canarias">Canarias</option>
+                                <option value="Santiago de Compostela">Santiago de Compostela</option>
+                            </optgroup>
+                            <optgroup label="Destino Internacional">
+                                <option value="Alpes suizos">Alpes suizos</option>
+                                <option value="Escocia">Escocia</option>
+                                <option value="Chaouen">Chaouen</option>
+                                <option value="Sahara">Sahara</option>
+                                <option value="Japón">Japón</option>
+                                <option value="Camboya">Camboya</option>
+                                <option value="La Ponia">La Ponia</option>
+                                <option value="Croacia">Croacia</option>
+                            </optgroup>
                         </select>
                     </div>
 
                     <div class="privacidad">
-                        <input type="checkbox" id="privacidad" required/> He leído y acepto la política de privacidad
+                        <input type="checkbox" name="privacidad" id="privacidad" required/> He leído y acepto la política de privacidad
                     </div>
+
+                    <!--<input type="submit" class="submit" value="Solicitar Información"/>-->
 
                     <input type="button" class="button" value="Solicitar Información"/>
 
                 </fieldset>
 
             </form>
-        
-            <p id="infoRecibida" style="display: none;">Información recibida</p>
 
-            <button onclick="mostrarOcultarInfo()" class="button" type="button">"ClicK mE tO" Filtrar</button>
+            <h3 id="respuesta" class="text-center fw-light"></h3>
+        
+            <p id="infoRecibida" style="display: none">Información recibida</p>
+
+            <button onclick="mostrarOcultarInfo()" class="button" type="button" id="filtrarButton">"ClicK mE tO" Filtrar</button>
+
 
         </section>
 

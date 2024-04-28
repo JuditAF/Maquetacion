@@ -10,31 +10,20 @@ h1 {
     justify-content: center;
 }
 
-main {
+.gridArea {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     padding: 2vh;
     display: grid;
-}
-
-.gridArea {
-    display: grid;
     grid-template-areas: 
-                    'head' 'head' 'head'
-                    'menuLateral' 'cuerpo' 'cuerpo'
-                    'footer' 'footer' 'footer';
-}
-
-.head {
-    width: 100vw;
-    height: 16.66%;
-    display: grid;
-    grid-template-areas: 
-                    'header' 'header' 'imagen';
+                    'header header imagen'
+                    'menuLateral cuerpo cuerpo'
+                    'menuLateral cuerpo cuerpo'
+                    'footer footer footer';
 }
 
 .header {
-    grid-area: head;
+    grid-area: header;
     background-color: #b31c14;
     color: white;
     font-size: x-large;
@@ -42,7 +31,7 @@ main {
 }
 
 .imagen {
-    grid-area: head;
+    grid-area: imagen;
     background-color: #540c0c;
     color: white;
     font-size: x-large;
@@ -55,29 +44,20 @@ main {
     background-color: #fb6b24;
     padding: 1vh;
     display: grid;
-    grid-template-areas: 
-                    'aside'
-                    'vacio'
-                    'aside2';
+    gap: 12vh;
+    
 }
 
 .aside {
-    grid-area: menuLateral;
-    height: 33.33%;
+    height: 70%;
     background-color: white;
     color: #fb6b24;
     font-size: x-large;
     text-align: center;
 }
 
-.vacio {
-    grid-area: menuLateral;
-    height: 33.33%;
-}
-
 .aside2 {
-    grid-area: menuLateral;
-    height: 33.33%;
+    height: 70%;
     background-color: white;
     color: #fb6b24;
     font-size: x-large;
@@ -90,14 +70,14 @@ main {
     background-color: #f03f1c;
     padding: 1vh;
     display: grid;
+    gap: 2vh;
     grid-template-areas: 
                     'contenido'
                     'texto';
 }
 
 .contenido {
-    grid-area: cuerpo;
-    height: 50%;
+    
     background-color: #f03f1c;
     border: 1px solid white;
     color: white;
@@ -106,8 +86,7 @@ main {
 }
 
 .texto {
-    grid-area: cuerpo;
-    height: 50%;
+   
     background-color: #f03f1c;
     border: 1px solid white;
     color: white;

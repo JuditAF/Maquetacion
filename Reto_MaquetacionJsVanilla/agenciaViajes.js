@@ -1,4 +1,13 @@
 
+const formulario = document.getElementById("#formularioClientes");
+
+formulario.addEventListener ("submit", validarFormulario);
+
+function validarFormulario(e) {
+    e.preventDefault();
+    console.log('validando...');
+}
+
 function mostrarOcultarInfo () {
     let info = document.getElementById("infoRecibida");
     if (info.style.display === "none") {
