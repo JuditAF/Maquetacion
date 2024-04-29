@@ -40,7 +40,6 @@ h1 {
 
 .menuLateral {
     grid-area: menuLateral;
-    height: 66.66%;
     background-color: #fb6b24;
     padding: 1vh;
     display: grid;
@@ -49,7 +48,10 @@ h1 {
 }
 
 .aside {
+<<<<<<< HEAD
     height: 70%;
+=======
+>>>>>>> dia6
     background-color: white;
     color: #fb6b24;
     font-size: x-large;
@@ -57,7 +59,10 @@ h1 {
 }
 
 .aside2 {
+<<<<<<< HEAD
     height: 70%;
+=======
+>>>>>>> dia6
     background-color: white;
     color: #fb6b24;
     font-size: x-large;
@@ -66,7 +71,6 @@ h1 {
 
 .cuerpo {
     grid-area: cuerpo;
-    height: 66.66%;
     background-color: #f03f1c;
     padding: 1vh;
     display: grid;
@@ -95,7 +99,6 @@ h1 {
 }
 
 .footer {
-    height: 16.66%;
     grid-area: footer;
     background-color: #540c0c;
     color: white;
