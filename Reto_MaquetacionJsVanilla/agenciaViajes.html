@@ -38,60 +38,68 @@
                     <legend>ÉNROLATE EN NUESTRO BARCO</legend>
 
                     <div class="field">
-                        <label for="">Aventurero/a</label>
-                        <input type="text" name="nombre" id="nombre" required placeholder="Introducce aquí tu nombre" autocomplete="name"/>
+                        <label for="nombre">Aventurero/a</label>
+                        <input type="text" name="nombre" id="nombre" required placeholder="Introducce aquí tu nombre" autocomplete="nombre"/>
                     </div>
 
                     <div class="field">
-                        <label for="">Compañía de Aventureros</label>
+                        <label for="apellidos">Clan</label>
+                        <input type="text" name="apellidos" id="apellidos" required placeholder="Introducce aquí tus apellidos" autocomplete="apellidos"/>
+                    </div>
+
+                    <div class="field">
+                        <label for="numeroViajeros">Compañía de Aventureros</label>
                         <input type="number" name="numeroViajeros" id="numeroViajeros" min="1" max="100"/>
 
                     </div>
 
                     <div class="field"> 
-                        <label for="">Aventureros con Mascota</label>
-                        <label for="">
-                        <input type="radio" name="amigoAnimal" id="amigoAnimal" value="solitario"/>
+                        <legend>Aventureros con Mascota</legend>
+                        <label for="amigoAnimalNo">
+                        <input type="radio" name="amigoAnimal" id="amigoAnimalNo" value="solitario"/>
                         No</label>
-                        <label for="">
-                        <input type="radio" name="amigoAnimal" id="amigoAnimal" value="bestFriend"/>
+                        <label for="amigoAnimalSi">
+                        <input type="radio" name="amigoAnimal" id="amigoAnimalSi" value="bestFriend"/>
                         Si</label>
                     </div>
 
                     <div class="field"> 
-                        <label id="validar" for="">Escoge día para evitar malos Vientos</label>
+                        <label id="validar" for="fecha">Escoge día para evitar malos Vientos</label>
                         <input id="fecha" name="fecha" type="date"/>
                     </div>
 
                     <div class="field"> 
-                        <label for="">Punto de Encuentro</label>
+                        <label for="origen">Punto de Encuentro</label>
                         <select name="origen" id="origen" aria-placeholder="Selecciona Puerto">
                             <option selected disabled>Puerto de Enrole</option>
-                            <option value="puerto1">Almería</option>
-                            <option value="puerto2">Málaga</option>
-                            <option value="puerto3">Granada</option>
-                            <option value="puerto4">Murcia</option>
-                            <option value="puerto5">Alicante</option>
+                            <option value="Almería">Almería</option>
+                            <option value="Málaga">Málaga</option>
+                            <option value="Granada">Granada</option>
+                            <option value="Murcia">Murcia</option>
+                            <option value="Alicante">Alicante</option>
                         </select>
                     </div>
 
                     <div class="field"> 
-                        <label for="">Objetivo Destino</label>
+                        <label for="destino">Objetivo Destino</label>
                         <select name="destino" id="destino" aria-placeholder="Selecciona Aventura">
                             <option selected disabled>Marca el Rumbo</option>
-                            <option value="nacional1">Galicia</option>
-                            <option value="nacional2">sevilla</option>
-                            <option value="nacional3">Ronda</option>
-                            <option value="nacional4">Canarias</option>
-                            <option value="nacional5">Santiago de Compostela</option>
-                            <option value="internacional1">Alpes suizos</option>
-                            <option value="internacional2">Escocia</option>
-                            <option value="internacional3">Chaouen</option>
-                            <option value="internacional4">Sahara</option>
-                            <option value="internacional5">Japón</option>
-                            <option value="internacional6">Camboya</option>
-                            <option value="internacional7">La Ponia</option>
-                            <option value="internacional8">Croacia</option>
+                            <optgroup label="Nacional"></optgroup>
+                            <option value="Galicia">Galicia</option>
+                            <option value="sevilla">sevilla</option>
+                            <option value="Ronda">Ronda</option>
+                            <option value="Canarias">Canarias</option>
+                            <option value="Santiago de Compostela">Santiago de Compostela</option>
+                            <option value="Mallorca">Mallorca</option>
+                            <optgroup label="Internacional"></optgroup>
+                            <option value="Alpes suizos">Alpes suizos</option>
+                            <option value="Escocia">Escocia</option>
+                            <option value="Chaouen">Chaouen</option>
+                            <option value="Sahara">Sahara</option>
+                            <option value="Japón">Japón</option>
+                            <option value="Camboya">Camboya</option>
+                            <option value="La Ponia">La Ponia</option>
+                            <option value="Croacia">Croacia</option>
                         </select>
                     </div>
 
@@ -99,16 +107,49 @@
                         <input type="checkbox" id="privacidad" required/> He leído y acepto la política de privacidad
                     </div>
 
-                    <input type="button" class="button" value="Solicitar Información"/>
+                    <button type="button" onclick="recogerDatos()" class="button" value="formularioClientes">Solicitar Información</button>
 
                 </fieldset>
 
             </form>
+
+            <article class="tablaFiltro" id="tablaFiltro">
         
-            <p id="infoRecibida" style="display: none;">Información recibida</p>
+                <!-- <p id="infoRecibida" style="display: none;">Información recibida</p> -->
 
-            <button onclick="mostrarOcultarInfo()" class="button" type="button">"ClicK mE tO" Filtrar</button>
+                <button onclick="mostrarOcultarInfo()" id="filter" class="button" type="button" value="formularioClientes">"ClicK mE tO" Filtrar</button>
 
+                <table id="infoRecibida" style="display: none">
+            
+                    <thead>
+                        <caption>Procedemos a mostrarte el resultado de los clientes interesados en viajar a Mallorca, Galicia o Canarias</caption>
+                        <tr>
+                            <th colspan="6">Lista de Contactos</th>
+                        </tr>
+                    </thead>
+
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Número Viajeros</th>
+                        <th>Fecha</th>
+                        <th>Origen</th>
+                        <th>Destino</th>
+                    </tr>
+                    
+                    <tr id="infoTabla">
+                    
+                    </tr>
+
+                    <tfoot>
+                        <tr>
+                            <th colspan="6">Nota: no se tiene en cuenta el puerto de origen</th>
+                        </tr>
+                    </tfoot>
+            
+                </table>
+
+            </article>
         </section>
 
     </main>
