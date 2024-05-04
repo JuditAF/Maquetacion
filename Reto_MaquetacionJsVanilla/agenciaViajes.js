@@ -2,7 +2,7 @@
 const form = document.getElementById('formularioClientes');
 
 var clientes = [];
-let listaClientes = [];
+
 
 function recogerDatos() {
 
@@ -19,16 +19,16 @@ function recogerDatos() {
         nPersonsContact: nPersonsInfo,
         dataTimeContact: dataTimeInfo,
         departureContact: departureInfo.toLowerCase(),
-        arrivalContact: arrivalInfo,
+        arrivalContact: arrivalInfo
     }
 
     form.reset();
     console.log(clientes);
     return clientes.push(contacto);
 
-};
+}
 
-
+let listaClientes = [];
 
 
     // const listaClientes = clientes.filter((contacto) => contacto.departureContact.includes('galicia') || contacto.departureContact.includes('mallorca') || contacto.departureContact.includes('canarias'));
