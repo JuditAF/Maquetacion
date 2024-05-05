@@ -6,6 +6,9 @@
     <title>Agencia de Viajes</title>
     <link rel="icon" href="../Reto4_Blog/img/favicon1.png">
     <link rel="stylesheet" href="./agenciaViajes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -19,16 +22,52 @@
     <main>
 
         <section class="companyIdentity">
-            QUIENES SOMOS. Descripción de la empresa.
+            <h2>ESCOGE TURISMO SOSTENIBLE, CONTRATA VIAJE ACOMPAÑADO O PERSONALIZADO</h2>
+            <div class="grid-container">
+                <p class="grid-item">Queremos sorprenderte <br> Nuestro objetivo es crear experiencias emocionantes y originales que recordarás siempre.</p>
+                <p class="grid-item">Cuidamos de ti y de los tuyos <br> Siempre estaréis en las mejores manos y con respaldo 24 horas durante todo el viaje para que podáis disfrutar de unas vacaciones tranquilas, seguras e inolvidables.</p>
+                <p class="grid-item">Prestamos atención a los detalles <br> Conocemos la esencia de los destinos y trabajamos de cerca con nuestros corresponsales y proveedores en todo el mundo, para garantizarte un trato personalizado y con todo detalle allá donde estés.</p>
+                <p class="grid-item">Velamos por tus intereses <br> Impulsados por nuestra vocación de servicio, nos comprometemos a buscar las mejores soluciones a tus deseos.</p>
+                <p class="grid-item">Sabemos que cada viaje es especial para ti <br> Compartimos tu ilusión y te asesoramos para hacer un viaje a la medida de tus gustos e intereses. Porque no hay dos personas iguales, no diseñamos dos viajes iguales.</p>
+                <p class="grid-item">Porque disponer de tiempo es un lujo <br> Planificamos y organizamos cada paso del viaje para que no tengas que preocuparte por nada: reservamos vuelos, hoteles y guías locales, de forma que la organización de cada viaje te resulte un proceso sencillo, agradable y sin complicaciones.</p>
+            </div>
+            <button type="button" class="button"><a href="#formularioClientes">Comienza a Andar con Nosotros</a></button>
         </section>
 
         <section id="destinos">
-            GALERÍA DESTINOS
+            <h2>VIAJES CON DEDICACIÓN. VUESTRA SELECCIÓN DE DESTINOS FAVORITOS</h2>
+            <div class="grid-container">
+                <figure class="grid-item">
+                    <img class="item" title="Canarias" src="../Reto4_Blog/img/Wallpaper10.jpg" alt="">
+                    <figcaption>Canarias</figcaption>
+                </figure>
+                <figure class="grid-item">
+                    <img class="item" title="Mallorca" src="../Reto4_Blog/img/Wallpaper9.jpg" alt="">
+                    <figcaption>Mallorca</figcaption>
+                </figure>
+                <figure class="grid-item">
+                    <img class="item" title="Galicia" src="../Reto4_Blog/img/wallpaper11.jpg" alt="">
+                    <figcaption>Galicia</figcaption>
+                </figure>
+                <figure class="grid-item">
+                    <img class="item" title="La Ponia" src="../Reto4_Blog/img/Wallpaper18.jpg" alt="">
+                    <figcaption>La Ponia</figcaption>
+                </figure>
+                <figure class="grid-item">
+                    <img class="item" title="Japón" src="../Reto4_Blog/img/Wallpaper15.jpg" alt="">
+                    <figcaption>Japón</figcaption>
+                </figure>
+                <figure class="grid-item">
+                    <img class="item" title="Chaouen" src="../Reto4_Blog/img/Wallpaper19.jpg" alt="">
+                    <figcaption>Chaouen</figcaption>
+                </figure>
+            </div>
+            <button type="button" class="button"><a href="#formularioClientes">Comienza a Andar con Nosotros</a></button>
         </section>
 
         <section id="formulario">
 
-            <form name="formularioClientes" id="formularioClientes" method="post"  action="./agenciaViajes.js">
+            <form name="formularioClientes" id="formularioClientes" method="get">
 
                 <fieldset>
 
@@ -36,7 +75,12 @@
 
                     <div class="field">
                         <label for="nombre">Aventurero/a</label>
-                        <input type="text" name="nombre" id="nombre" required placeholder="Introducce aquí tu nombre" autocomplete="name" autofocus/>
+                        <input type="text" name="nombre" id="nombre" required placeholder="Introducce aquí tu nombre" autocomplete="nombre"/>
+                    </div>
+
+                    <div class="field">
+                        <label for="apellidos">Clan</label>
+                        <input type="text" name="apellidos" id="apellidos" required placeholder="Introducce aquí tus apellidos" autocomplete="apellidos"/>
                     </div>
 
                     <div class="field">
@@ -47,10 +91,10 @@
 
                     <div class="field"> 
                         <legend>Aventureros con Mascota</legend>
-                        <label>
+                        <label for="amigoAnimalNo">
                         <input type="radio" name="amigoAnimal" id="amigoAnimalNo" value="solitario"/>
                         No</label>
-                        <label>
+                        <label for="amigoAnimalSi">
                         <input type="radio" name="amigoAnimal" id="amigoAnimalSi" value="bestFriend"/>
                         Si</label>
                     </div>
@@ -61,66 +105,103 @@
                     </div>
 
                     <div class="field"> 
-                        <legend>Punto de Encuentro</legend>
-                        <input type="list" name="salida" id="salida" list="origen">
-                        <datalist id="origen" name="origen" aria-placeholder="Selecciona Puerto">
+                        <label for="origen">Punto de Encuentro</label>
+                        <select name="origen" id="origen" aria-placeholder="Selecciona Puerto">
                             <option selected disabled>Puerto de Enrole</option>
-                            <option value="Almería"></option>
-                            <option value="Málaga"></option>
-                            <option value="Granada"></option>
-                            <option value="Murcia"></option>
-                            <option value="Alicante"></option>
-                        </datalist>
+                            <option value="Almería">Almería</option>
+                            <option value="Málaga">Málaga</option>
+                            <option value="Granada">Granada</option>
+                            <option value="Murcia">Murcia</option>
+                            <option value="Alicante">Alicante</option>
+                        </select>
                     </div>
 
                     <div class="field"> 
                         <label for="destino">Objetivo Destino</label>
                         <select name="destino" id="destino" aria-placeholder="Selecciona Aventura">
                             <option selected disabled>Marca el Rumbo</option>
-                            <optgroup label="Destino Nacional">
-                                <option value="Galicia">Galicia</option>
-                                <option value="sevilla">sevilla</option>
-                                <option value="Ronda">Ronda</option>
-                                <option value="Canarias">Canarias</option>
-                                <option value="Santiago de Compostela">Santiago de Compostela</option>
-                            </optgroup>
-                            <optgroup label="Destino Internacional">
-                                <option value="Alpes suizos">Alpes suizos</option>
-                                <option value="Escocia">Escocia</option>
-                                <option value="Chaouen">Chaouen</option>
-                                <option value="Sahara">Sahara</option>
-                                <option value="Japón">Japón</option>
-                                <option value="Camboya">Camboya</option>
-                                <option value="La Ponia">La Ponia</option>
-                                <option value="Croacia">Croacia</option>
-                            </optgroup>
+                            <optgroup label="Nacional"></optgroup>
+                            <option value="Galicia">Galicia</option>
+                            <option value="sevilla">sevilla</option>
+                            <option value="Ronda">Ronda</option>
+                            <option value="Canarias">Canarias</option>
+                            <option value="Santiago de Compostela">Santiago de Compostela</option>
+                            <option value="Mallorca">Mallorca</option>
+                            <optgroup label="Internacional"></optgroup>
+                            <option value="Alpes suizos">Alpes suizos</option>
+                            <option value="Escocia">Escocia</option>
+                            <option value="Chaouen">Chaouen</option>
+                            <option value="Sahara">Sahara</option>
+                            <option value="Japón">Japón</option>
+                            <option value="Camboya">Camboya</option>
+                            <option value="La Ponia">La Ponia</option>
+                            <option value="Croacia">Croacia</option>
                         </select>
                     </div>
 
                     <div class="privacidad">
-                        <input type="checkbox" name="privacidad" id="privacidad" required/> He leído y acepto la política de privacidad
+                        <input type="checkbox" id="privacidad" required/> He leído y acepto la política de privacidad
                     </div>
 
-                    <!--<input type="submit" class="submit" value="Solicitar Información"/>-->
-
-                    <input type="button" class="button" value="Solicitar Información"/>
+                    <button type="button" onclick="recogerDatos()" class="button" value="Solicitar Información"> Solicitar Información </button>
 
                 </fieldset>
 
             </form>
 
-            <h3 id="respuesta" class="text-center fw-light"></h3>
-        
-            <p id="infoRecibida" style="display: none">Información recibida</p>
+            <div class="tablaFiltro" id="contenedorTabla">
 
-            <button onclick="mostrarOcultarInfo()" class="button" type="button" id="filtrarButton">"ClicK mE tO" Filtrar</button>
+                <button onclick="filtrarInfo()" id="filter" class="button" type="button" value="formularioClientes">"ClicK mE tO" Filtrar</button>
 
+                <p id="info"></p>
 
+                <button type="button" id="addTable" onclick="addTable ()" class="button" value="formularioClientes">Mostrar Tabla</button>
+
+                <table id="infoRecibida" style="display: none">
+            
+                    <thead>
+                        <caption>Procedemos a mostrarte el resultado de los clientes interesados en viajar a Mallorca, Galicia o Canarias</caption>
+                        <tr>
+                            <th colspan="6">Lista de Contactos</th>
+                        </tr>
+
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Apellidos</th>
+                            <th scope="col">Número Viajeros</th>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Origen</th>
+                            <th scope="col">Destino</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="infoTabla">
+                    
+                    
+
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <th colspan="6">Nota: no se tiene en cuenta el puerto de origen</th>
+                        </tr>
+                    </tfoot>
+            
+                </table>
+
+            </div>
         </section>
 
     </main>
+    <footer class="barraNavegacion">
+        <a class="hipervinculoFooter poppins-thin" href=""><img class="imgFooter" src="../Reto4_Blog/img/instagram rosa 2.png" alt=""></a>
+        <a class="hipervinculoFooter poppins-thin" href=""><img class="imgFooter" src="../Reto4_Blog/img/facebokk rosa 2.png" alt=""></a>
+        <a class="hipervinculoFooter poppins-thin" href=""><img class="imgFooter" src="../Reto4_Blog/img/Twitter rosa.png" alt=""></a>
+        <a class="hipervinculoFooter poppins-thin" href=""><img class="imgFooter" src="../Reto4_Blog/img/YouTube rosa 2.png" alt=""></a>
+    </footer>
 
-    <script src="./agenciaViajes.js"></script>
+    <script src="./agenciaViajesForm.js"></script>
 
 </body>
 </html>

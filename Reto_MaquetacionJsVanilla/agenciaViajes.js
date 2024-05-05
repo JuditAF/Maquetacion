@@ -8,30 +8,80 @@ function validarFormulario(e) {
     console.log('validando...');
 }
 
-function mostrarOcultarInfo () {
-    let info = document.getElementById("infoRecibida");
-    if (info.style.display === "none") {
-        info.style.display = "block";
-    } else {
-        info.style.display = "none";
+const form = document.getElementById('formulario');
+
+
+function addTable () {
+    const contenedorTabla = document.getElementById('contenedorTabla');
+
+    if (contenedorTabla) {
+        const clickFiltro = document.getElementById('addTable');
+        if (clickFiltro) {
+            clickFiltro.addEventListener('click', () => crearTabla());
+        }
     }
-}
+// function addTable () {
 
-class Cliente {
-    constructor() {
-        this.name= " ";
-        this.persons= 0;
-        this.animalFriend= False;
-        this.date= new Date();
-        this.origin= " ";
-        this.destiny= " ";
+//     const contenedorTabla = document.getElementById('contenedorTabla');
+
+//     const tablaInfoRecibida = document.createElement('table');
+
+//     if (contenedorTabla) {
+
+//         if (tablaInfoRecibida) {
+
+//         tablaInfoRecibida = '</table class="table">';
+//         tablaInfoRecibida = tablaInfoRecibida + '<tr> <th scope="col">Nombre</th> <th scope="col">Apellidos</th> <th scope="col">Número Viajeros</th> <th scope="col">Fecha</th> <th scope="col">Origen</th> <th scope="col">Destino</th> </tr>';
+//         tablaInfoRecibida = tablaInfoRecibida + '</table>';
+//         listaClientes.forEach(contacto => {
+//             tablaInfoRecibida = tablaInfoRecibida + '<tr>';
+//             tablaInfoRecibida = tablaInfoRecibida + '<td>' + contacto.nameContact + '</td>';
+//             tablaInfoRecibida = tablaInfoRecibida + '<td>' + contacto.surnameContact + '</td>';
+//             tablaInfoRecibida = tablaInfoRecibida + '<td>' + contacto.nPersonsContact + '</td>';
+//             tablaInfoRecibida = tablaInfoRecibida + '<td>' + contacto.dataTimeContact + '</td>';
+//             tablaInfoRecibida = tablaInfoRecibida + '<td>' + contacto.departureContact + '</td>';
+//             tablaInfoRecibida = tablaInfoRecibida + '<td>' + contacto.arrivalContact + '</td>';
+//             tablaInfoRecibida = tablaInfoRecibida + '</tr>';
+//         });
+
+//         tablaInfoRecibida = '</table>';
+
+//         // document.getElementById('tablaFiltro').innerHTML = tablaInfoRecibida;
+
+//     }
+
+//     contenedorTabla.appendChild('contenedorTabla')
+// }
+
+//     document.getElementById('formulario').innerHTML = contenedorTabla;
+//     document.getElementById('onclick');
+//     if (onclick) {
+//         onclick.addEventListener('click', () => addTable)
+//     }
+
+// }
+
+    function crearTabla () {
+
+        let tablaInfoRecibida = '<table class="table">';
+        tablaInfoRecibida = tablaInfoRecibida + '<tr> <th scope="col">Nombre</th> <th scope="col">Apellidos</th> <th scope="col">Número Viajeros</th> <th scope="col">Fecha</th> <th scope="col">Origen</th> <th scope="col">Destino</th> </tr>';
+        tablaInfoRecibida = tablaInfoRecibida + '</table>';
+        listaClientes.forEach(contacto => {
+            tablaInfoRecibida = tablaInfoRecibida + '<tr>';
+            tablaInfoRecibida = tablaInfoRecibida + '<td>' + contacto.nameContact + '</td>';
+            tablaInfoRecibida = tablaInfoRecibida + '<td>' + contacto.surnameContact + '</td>';
+            tablaInfoRecibida = tablaInfoRecibida + '<td>' + contacto.nPersonsContact + '</td>';
+            tablaInfoRecibida = tablaInfoRecibida + '<td>' + contacto.dataTimeContact + '</td>';
+            tablaInfoRecibida = tablaInfoRecibida + '<td>' + contacto.departureContact + '</td>';
+            tablaInfoRecibida = tablaInfoRecibida + '<td>' + contacto.arrivalContact + '</td>';
+            tablaInfoRecibida = tablaInfoRecibida + '</tr>';
+        });
+
+        tablaInfoRecibida = '</table>';
+
+        document.getElementById('tablaFiltro').innerHTML = tablaInfoRecibida;
+
     }
-}
 
-let consultaClientes = [...Object];
-
-for (let dato of Cliente) {
-    return consultaClientes.push(dato);
-}
-
-let cliente1 = new Cliente(document.getElementById(nombre), document.getElementById(numeroViajeros), document.getElementById(amigoAnimal), document.getElementById(fecha), document.getElementById(origen), document.getElementById(destino));
+    console.log();
+};
