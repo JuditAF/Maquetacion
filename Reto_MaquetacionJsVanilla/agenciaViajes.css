@@ -6,7 +6,6 @@
 }
 
 body {
-    height: 100vw;
     width: 100vh;
     display: block;
     justify-content: center;
@@ -18,8 +17,7 @@ body {
 
 main {
     width: 100vw;
-    height: 100vh;
-    padding: 3.5rem;
+    padding: 1.5rem;
     text-align: center;
 }
 
@@ -43,43 +41,43 @@ h1 {
     height: 4vh;
     width: 100vw;
     font-size: 2vh;
+    font-family: sourceCodePro_Uniquifier;
     color: #179cb8;
     text-shadow: #ffff89 3px 6px 5px;
     display: flex;
     justify-content: center;
 }
 
+h2 {
+    margin: 2rem;
+    padding: 1rem;
+    display: block;
+    font-family: sourceCodePro_Uniquifier;
+    font-size: 3rem;
+    background-color: #ed3d63;
+}
+
 .companyIdentity {
-    width: 100vw;
-    height: 45vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: burlywood;
+    margin: 3rem;
+    gap: 2rem;
 }
 
 #destinos {
     width: 100vw;
-    height: 50vh;
-    background-color: rgb(166, 45, 223);
+    /* background-color: rgb(166, 45, 223); */
 }
 
 #formulario {
     width: 100vw;
-    /* height: 90vh; */
-    background-color:#ed3d63;
+    /* background-color:#ed3d63; */
+    margin-top: 6rem;
     display: grid;
-    /* display:flex;
-    justify-content: center;
-    align-items: center;  */
 }
 
-/* #tablaFiltro {
-    display: grid;
-    grid-template-columns: max-content;
+.tablaFiltro {
+    display: flex;
     justify-content: center;
-} */
+}
 
 #filter {
     display: grid;
@@ -172,7 +170,7 @@ input[type="radio"] {
   .button:active {
     background-color: #179cb8;
     border-color: #048a9c;
-    box-shadow: #005954
+    box-shadow: #005954;
     background-position: 0 0;
     transition: none;
   }
@@ -182,4 +180,45 @@ input[type="radio"] {
   font-optical-sizing: auto;
   font-weight: 600px;
   font-style: normal;
+}
+
+.grid-container {
+    width: 100%;
+    margin: auto;
+    font-family: sourceCodePro_Uniquifier;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+}
+
+.grid-item {
+    width: 100%;
+    margin: auto;
+    display: grid;
+}
+
+.item {
+    width: 34.666vw;
+    height: 50.5vh;
+    display: grid;
+    grid-gap: 0;
+}
+
+.barraNavegacion {
+    font-size: 4rem;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #179cb8;;
+    width: 100vw;
+    height: 10rem;
+    align-items: center;
+}
+.imgFooter {
+    width: 6rem;
+    height: 6rem;
 }

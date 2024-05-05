@@ -30,16 +30,25 @@ function recogerDatos() {
 
 let listaClientes = [];
 
-function mostrarOcultarInfo () {
-    
-    
+function filtrarInfo () {
     for ( i=0; i < clientes.length; i++ ) {
 
         if(clientes[i].arrivalContact == "galicia" || clientes[i].arrivalContact == "canarias" || clientes[i].arrivalContact == "mallorca") {
-            listaClientes.push(clientes[i]);
+            listaClientes.push(clientes[i].nameContact);
         }
     }
     console.log(listaClientes);
-        //document.getElementById("resultado").innerHTML = nombres;
-    console.log(document.getElementById("resultados").innerHTML = listaClientes);
-}
+    console.log(document.getElementById("info").innerHTML = listaClientes);
+    return
+    
+};
+
+function addTable () {
+    const form = document.getElementById("formularioClientes");
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        let transactionFormData = new FormData (form)
+    })
+};
+   

@@ -22,11 +22,47 @@
     <main>
 
         <section class="companyIdentity">
-            QUIENES SOMOS. Descripción de la empresa.
+            <h2>ESCOGE TURISMO SOSTENIBLE, CONTRATA VIAJE ACOMPAÑADO O PERSONALIZADO</h2>
+            <div class="grid-container">
+                <p class="grid-item">Queremos sorprenderte <br> Nuestro objetivo es crear experiencias emocionantes y originales que recordarás siempre.</p>
+                <p class="grid-item">Cuidamos de ti y de los tuyos <br> Siempre estaréis en las mejores manos y con respaldo 24 horas durante todo el viaje para que podáis disfrutar de unas vacaciones tranquilas, seguras e inolvidables.</p>
+                <p class="grid-item">Prestamos atención a los detalles <br> Conocemos la esencia de los destinos y trabajamos de cerca con nuestros corresponsales y proveedores en todo el mundo, para garantizarte un trato personalizado y con todo detalle allá donde estés.</p>
+                <p class="grid-item">Velamos por tus intereses <br> Impulsados por nuestra vocación de servicio, nos comprometemos a buscar las mejores soluciones a tus deseos.</p>
+                <p class="grid-item">Sabemos que cada viaje es especial para ti <br> Compartimos tu ilusión y te asesoramos para hacer un viaje a la medida de tus gustos e intereses. Porque no hay dos personas iguales, no diseñamos dos viajes iguales.</p>
+                <p class="grid-item">Porque disponer de tiempo es un lujo <br> Planificamos y organizamos cada paso del viaje para que no tengas que preocuparte por nada: reservamos vuelos, hoteles y guías locales, de forma que la organización de cada viaje te resulte un proceso sencillo, agradable y sin complicaciones.</p>
+            </div>
+            <button type="button" class="button"><a href="#formularioClientes">Comienza a Andar con Nosotros</a></button>
         </section>
 
         <section id="destinos">
-            GALERÍA DESTINOS
+            <h2>VIAJES CON DEDICACIÓN. VUESTRA SELECCIÓN DE DESTINOS FAVORITOS</h2>
+            <div class="grid-container">
+                <figure class="grid-item">
+                    <img class="item" title="Canarias" src="../Reto4_Blog/img/Wallpaper10.jpg" alt="">
+                    <figcaption>Canarias</figcaption>
+                </figure>
+                <figure class="grid-item">
+                    <img class="item" title="Mallorca" src="../Reto4_Blog/img/Wallpaper9.jpg" alt="">
+                    <figcaption>Mallorca</figcaption>
+                </figure>
+                <figure class="grid-item">
+                    <img class="item" title="Galicia" src="../Reto4_Blog/img/wallpaper11.jpg" alt="">
+                    <figcaption>Galicia</figcaption>
+                </figure>
+                <figure class="grid-item">
+                    <img class="item" title="La Ponia" src="../Reto4_Blog/img/Wallpaper18.jpg" alt="">
+                    <figcaption>La Ponia</figcaption>
+                </figure>
+                <figure class="grid-item">
+                    <img class="item" title="Japón" src="../Reto4_Blog/img/Wallpaper15.jpg" alt="">
+                    <figcaption>Japón</figcaption>
+                </figure>
+                <figure class="grid-item">
+                    <img class="item" title="Chaouen" src="../Reto4_Blog/img/Wallpaper19.jpg" alt="">
+                    <figcaption>Chaouen</figcaption>
+                </figure>
+            </div>
+            <button type="button" class="button"><a href="#formularioClientes">Comienza a Andar con Nosotros</a></button>
         </section>
 
         <section id="formulario">
@@ -113,14 +149,14 @@
 
             </form>
 
-            <article class="tablaFiltro" id="tablaFiltro">
-        
-                <!-- <p id="infoRecibida" style="display: none;">Información recibida</p> -->
+            <div class="tablaFiltro" id="contenedorTabla">
 
-                <button onclick="mostrarOcultarInfo()" id="filter" class="button" type="button" value="formularioClientes">"ClicK mE tO" Filtrar</button>
+                <button onclick="filtrarInfo()" id="filter" class="button" type="button" value="formularioClientes">"ClicK mE tO" Filtrar</button>
 
-                <p id="resultados"></p>
-                
+                <p id="info"></p>
+
+                <button type="button" id="addTable" onclick="addTable ()" class="button" value="formularioClientes">Mostrar Tabla</button>
+
                 <table id="infoRecibida" style="display: none">
             
                     <thead>
@@ -128,20 +164,23 @@
                         <tr>
                             <th colspan="6">Lista de Contactos</th>
                         </tr>
+
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Apellidos</th>
+                            <th scope="col">Número Viajeros</th>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Origen</th>
+                            <th scope="col">Destino</th>
+                        </tr>
+
                     </thead>
 
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Apellidos</th>
-                        <th>Número Viajeros</th>
-                        <th>Fecha</th>
-                        <th>Origen</th>
-                        <th>Destino</th>
-                    </tr>
+                    <tbody id="infoTabla">
                     
-                    <tr id="infoTabla">
                     
-                    </tr>
+
+                    </tbody>
 
                     <tfoot>
                         <tr>
@@ -151,10 +190,16 @@
             
                 </table>
 
-            </article>
+            </div>
         </section>
 
     </main>
+    <footer class="barraNavegacion">
+        <a class="hipervinculoFooter poppins-thin" href=""><img class="imgFooter" src="../Reto4_Blog/img/instagram rosa 2.png" alt=""></a>
+        <a class="hipervinculoFooter poppins-thin" href=""><img class="imgFooter" src="../Reto4_Blog/img/facebokk rosa 2.png" alt=""></a>
+        <a class="hipervinculoFooter poppins-thin" href=""><img class="imgFooter" src="../Reto4_Blog/img/Twitter rosa.png" alt=""></a>
+        <a class="hipervinculoFooter poppins-thin" href=""><img class="imgFooter" src="../Reto4_Blog/img/YouTube rosa 2.png" alt=""></a>
+    </footer>
 
     <script src="./agenciaViajesForm.js"></script>
 
