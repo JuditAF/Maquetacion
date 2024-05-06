@@ -17,12 +17,8 @@ h1 {
 
 .cuadricula {
     height: 60vh;
-<<<<<<< HEAD
     width: 80vw;
     border: 2px solid palevioletred;
-=======
-    width: 1300px;
->>>>>>> dia6
     align-content: center;
     display: grid;
     grid-template-columns: 2fr 1fr 2fr 2fr 1fr 2fr;
@@ -32,11 +28,8 @@ h1 {
 }
 
 .A {
-<<<<<<< HEAD
-=======
     width: 500px;
     height: 130%;
->>>>>>> dia6
     background-color: greenyellow;
     color: white;
     font-size: x-large;
@@ -45,11 +38,8 @@ h1 {
 }
 
 .B {
-<<<<<<< HEAD
-=======
     width: 300px;
     height: 130%;
->>>>>>> dia6
     background-color: black;
     color: white;
     font-size: x-large;
@@ -57,11 +47,8 @@ h1 {
 }
 
 .C {
-<<<<<<< HEAD
-=======
     width: 500px;
     height: 130%;
->>>>>>> dia6
     background-color: greenyellow;
     color: white;
     font-size: x-large;
@@ -69,11 +56,8 @@ h1 {
 }
 
 .D {
-<<<<<<< HEAD
-=======
     width: 500px;
     height: 70%;
->>>>>>> dia6
     background-color: black;
     color: white;
     font-size: x-large;
@@ -81,11 +65,8 @@ h1 {
 }
 
 .E {
-<<<<<<< HEAD
-=======
     width: 300px;
     height: 70%;
->>>>>>> dia6
     background-color: greenyellow;
     color: white;
     font-size: x-large;
@@ -93,11 +74,8 @@ h1 {
 }
 
 .F {
-<<<<<<< HEAD
-=======
     width: 500px;
     height: 70%;
->>>>>>> dia6
     background-color: black;
     color: white;
     font-size: x-large;
