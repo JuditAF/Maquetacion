@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodenotchLAndingPage</title>
+    <link rel="icon" href="./imagenes/logocuadrado.png">
+    <link rel="stylesheet" href="./codenotchWeb.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img cl src="./imagenes/logocuadrado.png" alt="">
+        </div>
+        <h1>
+            ESCUELA PROFESIONAL DE NEGOCIOS QUE CAMINA CONTIGO
+        </h1>
+        <nav class="barraNavegacion">
+            <a class="hiperVinculo poppins-thin" href="./codenotchWeb.html">Codenotch Landing Page</a>
+            <a class="hiperVinculo poppins-thin" href="./contacto.html">Contacto</a>
+            <a class="hiperVinculo poppins-thin" href="./cursos.html">Cursos</a>
+            <a class="hiperVinculo poppins-thin" href="./equipo.html">Conoce Nuestro Equipo</a>
+        </nav>
+    </header>
+    <main>
+
+        <section class="cabeceraContacto">
+
+            <h2>Hoy empieza <span>el Cambio</span></h2>
+
+            <figure class="cajaContenido">
+                <img src="./imagenes/contacto1.jpg" alt="">
+                <p>Entra en el World Development, <span>TE ESTÁ ESPERANDO</span></p>
+            </figure>
+
+            <button type="button" class="button"><a href="#formularioAlumnos">Adéntrate</a></button>
+            
+            
+        </section>
+
+        <section class="cabeceraContacto2">
+
+            <figure class="cajaContenido">
+                <p>Programa de Estudios Desarrollado por <span>Profesores que fueron Alumnos,</span> <br>la guía de la experiencia</p>
+                <img src="./imagenes/conviertete-en-top-notch-coder-1200x703.jpg" alt="">
+            </figure>
+
+            <button type="button" class="button"><a href="#formularioAlumnos">Contacta con Nosotros</a></button>
+        
+        </section>
+
+        <section id="formulario">
+
+            <form name="formularioAlumnos" id="formularioAlumnos" method="get">
+
+                <fieldset>
+
+                    <legend>EMPIEZA TU CARRERA AL FUTURO</legend>
+
+                    <div class="field">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" required placeholder="Introducce aquí tu nombre" autocomplete="nombre"/>
+                    </div>
+
+                    <div class="field">
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" name="apellidos" id="apellidos" required placeholder="Introducce aquí tus apellidos" autocomplete="apellidos"/>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Introducce aquí tu correo electrónico habitual" multiple required autocomplete="email"/>
+
+                    </div>
+
+                    <div class="field">
+                        <label for="Tlf">Teléfono</label>
+                        <input type="tel" name="Tlf" id="Tlf" multiple autocomplete="telefono" required/>
+
+                    </div>
+
+                    <div class="field"> 
+                        <label for="curso">Curso de Interés</label>
+                        <select name="curso" id="curso" aria-placeholder="Selecciona curso" required>
+                            <option selected disabled>Elige tu modelo de curso</option>
+                            <optgroup label="Full-Time"></optgroup>
+                            <option value="Desarrollo Web Full-Stack">Desarrollo Web Full-Stack</option>
+                            <option value="Data Analytics">Data Analytics</option>
+                            <optgroup label="Part-Time"></optgroup>
+                            <option value="Desarrollo Web Full-Stack">Desarrollo Web Full-Stack</option>
+                            <option value="Data Analytics">Data Analytics</option>
+                        </select>
+                    </div>
+
+                    <div class="field"> 
+                        <label for="observaciones">Ayúdanos a contactar</label>
+                        <textarea name="observaciones" id="observaciones" placeholder="Sugiere horario de Contacto"></textarea>
+                    </div>
+
+                    <div class="privacidad">
+                        <input type="checkbox" id="privacidad" required/> <small>He leído y acepto la política de privacidad</small>
+                    </div>
+
+                    <button type="button" onclick="recogerDatos()" class="button" value="Solicitar Información"> Solicitar Información </button>
+
+                </fieldset>
+
+            </form>
+
+    </main>
+    <footer class="barraNavegacion">
+        <img class="imgFooter" src="./imagenes/instagram.jpg" alt="">
+        <a class="hipervinculoFooter poppins-thin" href="https://www.instagram.com/codenotchmad/?hl=es">Instagram</a>
+        <img class="imgFooter" src="./imagenes/facebook2.jpeg" alt="">
+        <a class="hipervinculoFooter poppins-thin" href="https://www.facebook.com/codenotchMAD/?locale=es_ES">facebook</a>
+        <img class="imgFooter" src="./imagenes/twitter2.png" alt="">
+        <a class="hipervinculoFooter poppins-thin" href="https://twitter.com/CodenotchMAD">Twitter</a>
+        <img class="imgFooter" src="./imagenes/linkedin2.png" alt="">
+        <a class="hipervinculoFooter poppins-thin" href="https://es.linkedin.com/school/codenotch/">Linkedin</a>
+        <img class="imgFooter" src="./imagenes/youtube.png" alt="">
+        <a class="hipervinculoFooter poppins-thin" href="https://www.youtube.com/channel/UC-WbTwDeSmNaEr11ag3YZbw">Youtube</a>
+    </footer>
+    
+</body>
+</html>
