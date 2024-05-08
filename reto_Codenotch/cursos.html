@@ -9,52 +9,120 @@
 </head>
 <body>
     <header>
+        
         <div class="logo">
             <img cl src="./imagenes/logocuadrado.png" alt="">
         </div>
+
         <h1>
             ESCUELA PROFESIONAL DE NEGOCIOS QUE CAMINA CONTIGO
         </h1>
-        <nav class="barraNavegacion">
-            <a class="hiperVinculo poppins-thin" href="./codenotchWeb.html">Codenotch Landing Page</a>
-            <a class="hiperVinculo poppins-thin" href="./contacto.html">Contacto</a>
-            <a class="hiperVinculo poppins-thin" href="./cursos.html">Cursos</a>
-            <a class="hiperVinculo poppins-thin" href="./equipo.html">Conoce Nuestro Equipo</a>
+
+        <nav class="barraNavegacion" id="barraNavegacion">
+            <ul>
+                <li><a class="hiperVinculo poppins-thin" href="./codenotchWeb.html">Codenotch Landing Page</a></li>
+                <li><a class="hiperVinculo poppins-thin" href="./equipo.html">Conoce Nuestro Equipo</a></li>
+                <li><a class="hiperVinculo poppins-thin" href="./cursos.html">Cursos</a></li>
+                <li><a class="hiperVinculo poppins-thin" href="./contacto.html">Contacto</a></li>
+            </ul>
         </nav>
+
     </header>
+
     <main>
 
-        <section id="destinos">
-            <h2>CONOCE LOS CURSOS IMPARTIDOS EN NUESTRA ESCUELA</h2>
-            <div class="grid-container2">
+        <section id="cursos">
+
+            <h2 class="poppins-thin">CONOCE LOS CURSOS IMPARTIDOS EN NUESTRA ESCUELA</h2>
+
+            <article class="grid-container2">
 
                 <figure class="grid-item">
                     <img class="item" title="Canarias" src="./imagenes/BANNER_curso-fullstack.jpg" alt="">
                     <figcaption>DESARROLLO WEB FULL STACK</figcaption>
                 </figure>
+
+                <aside class="grid-container">
+                    <ul class="card-container">
+                        <li>
+                            <img src="../../Reto_CoedenotchWEb/imagenes/calendar-icon-blue-electronics.png" alt="">
+                            <p>Fecha próximo Curso</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <img src="../../Reto_CoedenotchWEb/imagenes/AFORO_cuadrado.png" alt="">
+                            
+                            <p>Plazas Disponibles</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <img src="../../Reto_CoedenotchWEb/imagenes/icons-price-tag-price-tag.png" alt="">
+                            <p>Precio</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <img src="../../Reto_CoedenotchWEb/imagenes/png-transparent.png" alt="">
+                            <p>Descripción del Curso</p>
+                        </li>
+                    </ul>
+
+                </aside>
+
+                <button type="button" class="button"><a href="./contacto.html">Más Información</a></button>
+
+            </article>
+
+            <article class="grid-container2">
+
+                <aside class="grid-container">
+                    
+                </aside>
+
                 <figure class="grid-item">
                     <img class="item" title="Mallorca" src="./imagenes/ANALITICA-DE-DATOS.jpg" alt="">
                     <figcaption>DATA ANALYTICS</figcaption>
                 </figure>
-            
-                    <figcaption>Chaouen</figcaption>
-                </figure>
-            </div>
-            <button type="button" class="button"><a href="#formularioClientes">Comienza a Andar con Nosotros</a></button>
+
+                <button type="button" class="button"><a href="./contacto.html">Comienza a Andar con Nosotros</a></button>
+                
+            </article>
+
         </section>
 
     </main>
-    <footer class="barraNavegacion">
-        <img class="imgFooter" src="./imagenes/instagram.jpg" alt="">
-        <a class="hipervinculoFooter poppins-thin" href="https://www.instagram.com/codenotchmad/?hl=es">Instagram</a>
-        <img class="imgFooter" src="./imagenes/facebook2.jpeg" alt="">
-        <a class="hipervinculoFooter poppins-thin" href="https://www.facebook.com/codenotchMAD/?locale=es_ES">facebook</a>
-        <img class="imgFooter" src="./imagenes/twitter2.png" alt="">
-        <a class="hipervinculoFooter poppins-thin" href="https://twitter.com/CodenotchMAD">Twitter</a>
-        <img class="imgFooter" src="./imagenes/linkedin2.png" alt="">
-        <a class="hipervinculoFooter poppins-thin" href="https://es.linkedin.com/school/codenotch/">Linkedin</a>
-        <img class="imgFooter" src="./imagenes/youtube.png" alt="">
-        <a class="hipervinculoFooter poppins-thin" href="https://www.youtube.com/channel/UC-WbTwDeSmNaEr11ag3YZbw">Youtube</a>
+
+    <footer class="navFooter">
+        <div class="contact">
+            <img src="../../Reto_CoedenotchWEb/imagenes/logoSinFondo.png" alt="">
+            <div id="contact">
+                <address>
+                    CONTACTO
+                    <br>
+                    C/ Santo Ángel, 48
+                    <br>
+                    28043 Madrid
+                </address>
+                <div id="tlf">
+                    <img src="../../Reto_CoedenotchWEb/imagenes/icono_tlf.png" alt="">
+                    <p>.   +648 31 94 99</p>
+                </div>
+            </div>
+        </div>
+        <div class="derechos">
+            <p class="pie"><small>@copytight 2024 - Codenotch.com - Todos los derechos reservados</small></p>
+        </div>
+        <div class="rrhh">
+            <img class="imgFooter" src="./imagenes/instagram.jpg" alt="">
+            <a class="hipervinculoFooter poppins-thin" href="https://www.instagram.com/codenotchmad/?hl=es">Instagram</a>
+            <img class="imgFooter" src="./imagenes/facebook.png" alt="">
+            <a class="hipervinculoFooter poppins-thin" href="https://www.facebook.com/codenotchMAD/?locale=es_ES">facebook</a>
+            <img class="imgFooter" src="./imagenes/twitter2.png" alt="">
+            <a class="hipervinculoFooter poppins-thin" href="https://twitter.com/CodenotchMAD">Twitter</a>
+            <img class="imgFooter" src="./imagenes/linkedin2.png" alt="">
+            <a class="hipervinculoFooter poppins-thin" href="https://es.linkedin.com/school/codenotch/">Linkedin</a>
+            <img class="imgFooter" src="./imagenes/youtube.png" alt="">
+            <a class="hipervinculoFooter poppins-thin" href="https://www.youtube.com/channel/UC-WbTwDeSmNaEr11ag3YZbw">Youtube</a>
+        </div>
     </footer>
     
 </body>

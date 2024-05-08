@@ -15,11 +15,13 @@
         <h1>
             ESCUELA PROFESIONAL DE NEGOCIOS QUE CAMINA CONTIGO
         </h1>
-        <nav class="barraNavegacion">
-            <a class="hiperVinculo poppins-thin" href="./codenotchWeb.html">Codenotch Landing Page</a>
-            <a class="hiperVinculo poppins-thin" href="./contacto.html">Contacto</a>
-            <a class="hiperVinculo poppins-thin" href="./cursos.html">Cursos</a>
-            <a class="hiperVinculo poppins-thin" href="./equipo.html">Conoce Nuestro Equipo</a>
+        <nav class="barraNavegacion" id="barraNavegacion">
+            <ul>
+                <li><a class="hiperVinculo poppins-thin" href="./codenotchWeb.html">Codenotch Landing Page</a></li>
+                <li><a class="hiperVinculo poppins-thin" href="./equipo.html">Conoce Nuestro Equipo</a></li>
+                <li><a class="hiperVinculo poppins-thin" href="./cursos.html">Cursos</a></li>
+                <li><a class="hiperVinculo poppins-thin" href="./contacto.html">Contacto</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -74,8 +76,8 @@
                     </div>
 
                     <div class="field">
-                        <label for="Tlf">Teléfono</label>
-                        <input type="tel" name="Tlf" id="Tlf" multiple autocomplete="telefono" required/>
+                        <label for="tlf">Teléfono</label>
+                        <input type="tel" name="tlf" id="tlf" multiple autocomplete="telefono" required/>
 
                     </div>
 
@@ -88,7 +90,6 @@
                             <option value="Data Analytics">Data Analytics</option>
                             <optgroup label="Part-Time"></optgroup>
                             <option value="Desarrollo Web Full-Stack">Desarrollo Web Full-Stack</option>
-                            <option value="Data Analytics">Data Analytics</option>
                         </select>
                     </div>
 
@@ -108,18 +109,40 @@
             </form>
 
     </main>
-    <footer class="barraNavegacion">
-        <img class="imgFooter" src="./imagenes/instagram.jpg" alt="">
-        <a class="hipervinculoFooter poppins-thin" href="https://www.instagram.com/codenotchmad/?hl=es">Instagram</a>
-        <img class="imgFooter" src="./imagenes/facebook2.jpeg" alt="">
-        <a class="hipervinculoFooter poppins-thin" href="https://www.facebook.com/codenotchMAD/?locale=es_ES">facebook</a>
-        <img class="imgFooter" src="./imagenes/twitter2.png" alt="">
-        <a class="hipervinculoFooter poppins-thin" href="https://twitter.com/CodenotchMAD">Twitter</a>
-        <img class="imgFooter" src="./imagenes/linkedin2.png" alt="">
-        <a class="hipervinculoFooter poppins-thin" href="https://es.linkedin.com/school/codenotch/">Linkedin</a>
-        <img class="imgFooter" src="./imagenes/youtube.png" alt="">
-        <a class="hipervinculoFooter poppins-thin" href="https://www.youtube.com/channel/UC-WbTwDeSmNaEr11ag3YZbw">Youtube</a>
+    <footer class="navFooter">
+        <div class="contact">
+            <img src="../../Reto_CoedenotchWEb/imagenes/logoSinFondo.png" alt="">
+            <div id="contact">
+                <address>
+                    CONTACTO
+                    <br>
+                    C/ Santo Ángel, 48
+                    <br>
+                    28043 Madrid
+                </address>
+                <div id="tlf">
+                    <img src="../../Reto_CoedenotchWEb/imagenes/icono_tlf.png" alt="">
+                    <p>.   +648 31 94 99</p>
+                </div>
+            </div>
+        </div>
+        <div class="derechos">
+            <p class="pie"><small>@copytight 2024 - Codenotch.com - Todos los derechos reservados</small></p>
+        </div>
+        <div class="rrhh">
+            <img class="imgFooter" src="./imagenes/instagram.jpg" alt="">
+            <a class="hipervinculoFooter poppins-thin" href="https://www.instagram.com/codenotchmad/?hl=es">Instagram</a>
+            <img class="imgFooter" src="./imagenes/facebook.png" alt="">
+            <a class="hipervinculoFooter poppins-thin" href="https://www.facebook.com/codenotchMAD/?locale=es_ES">facebook</a>
+            <img class="imgFooter" src="./imagenes/twitter2.png" alt="">
+            <a class="hipervinculoFooter poppins-thin" href="https://twitter.com/CodenotchMAD">Twitter</a>
+            <img class="imgFooter" src="./imagenes/linkedin2.png" alt="">
+            <a class="hipervinculoFooter poppins-thin" href="https://es.linkedin.com/school/codenotch/">Linkedin</a>
+            <img class="imgFooter" src="./imagenes/youtube.png" alt="">
+            <a class="hipervinculoFooter poppins-thin" href="https://www.youtube.com/channel/UC-WbTwDeSmNaEr11ag3YZbw">Youtube</a>
+        </div>
     </footer>
     
+    <script src="./codenotch.js"></script>
 </body>
 </html>
