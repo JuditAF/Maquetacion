@@ -19,20 +19,10 @@ h1 {
 .cuadricula {
     height: 60vh;
     width: 80vw;
-<<<<<<< HEAD
-    border: 2px solid palevioletred;
-    align-content: center;
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr 2fr 1fr 2fr;
-    grid-template-rows: 1fr 1fr;
-    /*grid-template-columns: 2fr 1fr 2fr;
-    grid-template-rows: 1fr 1fr;*/
-=======
     align-content: center;
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
     grid-template-rows: 2fr 1fr;
->>>>>>> dia6
 }
 
 .A {
