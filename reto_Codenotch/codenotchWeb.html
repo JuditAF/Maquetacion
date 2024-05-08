@@ -13,68 +13,128 @@
 <body>
     <header>
         <div class="logo">
-            <img cl src="./imagenes/logocuadrado.png" alt="">
+            <img id="logotipo" src="./imagenes/logocuadrado.png" alt="">
         </div>
         <h1>
             ESCUELA PROFESIONAL DE NEGOCIOS QUE CAMINA CONTIGO
         </h1>
-        <nav class="barraNavegacion">
-            <a class="hiperVinculo poppins-thin" href="./codenotchWeb.html">Codenotch Landing Page</a>
-            <a class="hiperVinculo poppins-thin" href="./contacto.html">Contacto</a>
-            <a class="hiperVinculo poppins-thin" href="./cursos.html">Cursos</a>
-            <a class="hiperVinculo poppins-thin" href="./equipo.html">Conoce Nuestro Equipo</a>
+        <nav class="barraNavegacion" id="barraNavegacion">
+            <ul>
+                <li><a class="hiperVinculo poppins-thin" href="./codenotchWeb.html">Codenotch Landing Page</a></li>
+                <li><a class="hiperVinculo poppins-thin" href="./equipo.html">Conoce Nuestro Equipo</a></li>
+                <li><a class="hiperVinculo poppins-thin" href="./cursos.html">Cursos</a></li>
+                <li><a class="hiperVinculo poppins-thin" href="./contacto.html">Contacto</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <section class="cuerpo quineSomos">
-                <h2 class="tituloSeccion poppins-bold">Nuestro <span>Objetivo</span></h2> 
-                <h2 class="tituloSeccion poppins-bold">formar <span>Profesionales TECH</span></h2>
-                <h2 class="tituloSeccion poppins-bold"><span>Equipos de futuro</span></h2>
-                <aside class="aside">
-                    <img src="./imagenes/programacion.jpeg" alt="">
-                </aside>
+            <figure id="imgCuerpo">
+                <img src="../../Reto_CoedenotchWEb/imagenes/icono4.png" alt="">
+            </figure>
+            <div class="cajaTitulo">
+                <h2 class="tituloSeccion poppins-bold">Nuestro <span>Objetivo</span>
+                formar <span>Profesionales TECH</span></h2>
+                <h2><span style="font-style:oblique; font-size: 5rem; color: whitesmoke;">Equipos de futuro</span></h2>
+            </div>
+            <aside class="aside">
+                <img src="./imagenes/programacion.jpeg" alt="">
+            </aside>
         </section>
-        <section class="cuerpo_analisis">
+        <section class="cuerpo analisis">
             <div class="titulo">
                 <h2 class="tituloSeccion poppins-bold"><span>Empresas Líderes</span></h2>
                 <h2 class="tituloSeccion poppins-bold">escogen <span>Alumnos Codenotch</span></h2>
             </div>
          
             <div class="empresas">
-                <div class="circle">
-                    <img style="clip-path: circle(100px)" width="80%" src="./imagenes/ibkm2.jpeg" alt="">
-                </div>
-                <div class="circle">
-                    <img style="clip-path: circle(100px)" src="./imagenes/santander2.png" alt="">
-                </div>
-                <div class="circle">
-                    <img style="clip-path: circle(100px)" src="./imagenes/Infojobs 2.jpg" alt="">
-                </div>
-                <div class="circle">
-                    <img style="clip-path: circle(100px)" src="./imagenes/idealista.jpg" alt="">
-                </div>
-                <div class="circle">
-                    <img style="clip-path: circle(100px)" src="./imagenes/ikea.png" alt="">
+                <div class="circle" style="width: 100%;">
+                    <div class="circle">
+                        <img src="../../Reto_CoedenotchWEb/imagenes/IBMLogo-450x450.png" alt="">
+                    </div class="circle">
+                    <div class="circle">
+                        <img src="./imagenes/santander2.png" alt="">  
+                    </div class="circle">  
+                    <div class="circle">        
+                        <img src="./imagenes/Infojobs 2.jpg" alt="">
+                    </div>
+                    <div class="circle">
+                        <img src="./imagenes/idealista.jpg" alt="">
+                    </div>
+                    <div class="circle">
+                        <img src="./imagenes/ikea.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="cuerpo opinion">
-            <h2 class="tituloSeccion poppins-bold">Apoyo para una </h2>
-            <h2 class="tituloSeccion poppins-bold"><span>Formación Intensiva Responsable</span></h2>
-            <img src="./imagenes/banner.png" alt="">
+        <section class="cuerpo" id="opinion">
+            <div id="plantilla" class="finLP">
+                <div class="first">
+                    <div class="conoce">
+                        <h2 class="tituloSeccion poppins-bold">Apoyo para una <br>
+                        <span>Formación Intensiva Responsable</span></h2>
+                        <button type="button" class="button"><a href="./contacto.html">Más Información</a></button>
+                    </div>
+                    <div class="tech">
+                        <p class="poppins-bold">APRENDE LAS TECNOLOGÍAS MÁS DEMANDADAS</p>
+                        <img src="../../Reto_CoedenotchWEb/imagenes/MERN.png" alt="">
+                    </div>
+                    <div class="why">
+                        <div class="xWhy">
+                            <img id="phone" src="../../Reto_CoedenotchWEb/imagenes/phonewp-removebg-preview.png" alt="">
+                            <P><strong style="color: #20ddb0; font-size: 4rem;">Proyectos de los Top Notch Coders</strong> <br>
+                                Nuestros bootcamps están pensados para enseñarte <br>
+                                a programar desde cero y los proyectos finales son <br>
+                                prueba de que esto es posible. <br>
+                                
+                                Así es como se las gastan nuestros alumnos al término <br>
+                                del bootcamp, echa un buen vistazo a lo que son capaces <br>
+                                 de crear por sí mismos… Orgullo Top Notch Coder:</P>
+                        </div>
+                        <!-- <figure class="second">
+                            <img src="../../Reto_CoedenotchWEb/imagenes/icono7-removebg-preview.png" alt="">
+                        </figure> -->
+                    </div>
+                    <div>
+                        <img src="./imagenes/banner.png" alt="">
+                    </div>
+                </div>
+            </div>
+            
         </section>
     </main>
-    <footer class="barraNavegacion">
-        <img class="imgFooter" src="./imagenes/instagram.jpg" alt="">
-        <a class="hipervinculoFooter poppins-thin" href="https://www.instagram.com/codenotchmad/?hl=es">Instagram</a>
-        <img class="imgFooter" src="./imagenes/facebook.png" alt="">
-        <a class="hipervinculoFooter poppins-thin" href="https://www.facebook.com/codenotchMAD/?locale=es_ES">facebook</a>
-        <img class="imgFooter" src="./imagenes/twitter2.png" alt="">
-        <a class="hipervinculoFooter poppins-thin" href="https://twitter.com/CodenotchMAD">Twitter</a>
-        <img class="imgFooter" src="./imagenes/linkedin2.png" alt="">
-        <a class="hipervinculoFooter poppins-thin" href="https://es.linkedin.com/school/codenotch/">Linkedin</a>
-        <img class="imgFooter" src="./imagenes/youtube.png" alt="">
-        <a class="hipervinculoFooter poppins-thin" href="https://www.youtube.com/channel/UC-WbTwDeSmNaEr11ag3YZbw">Youtube</a>
+    <footer class="navFooter">
+        <div class="contact">
+            <img src="../../Reto_CoedenotchWEb/imagenes/logoSinFondo.png" alt="">
+            <div id="contact">
+                <address>
+                    CONTACTO
+                    <br>
+                    C/ Santo Ángel, 48
+                    <br>
+                    28043 Madrid
+                </address>
+                <div id="tlf">
+                    <img src="../../Reto_CoedenotchWEb/imagenes/icono_tlf.png" alt="">
+                    <p>.   +648 31 94 99</p>
+                </div>
+            </div>
+        </div>
+        <div class="derechos">
+            <p class="pie"><small>@copytight 2024 - Codenotch.com - Todos los derechos reservados</small></p>
+        </div>
+        <div class="rrhh">
+            <img class="imgFooter" src="./imagenes/instagram.jpg" alt="">
+            <a class="hipervinculoFooter poppins-thin" href="https://www.instagram.com/codenotchmad/?hl=es">Instagram</a>
+            <img class="imgFooter" src="./imagenes/facebook.png" alt="">
+            <a class="hipervinculoFooter poppins-thin" href="https://www.facebook.com/codenotchMAD/?locale=es_ES">facebook</a>
+            <img class="imgFooter" src="./imagenes/twitter2.png" alt="">
+            <a class="hipervinculoFooter poppins-thin" href="https://twitter.com/CodenotchMAD">Twitter</a>
+            <img class="imgFooter" src="./imagenes/linkedin2.png" alt="">
+            <a class="hipervinculoFooter poppins-thin" href="https://es.linkedin.com/school/codenotch/">Linkedin</a>
+            <img class="imgFooter" src="./imagenes/youtube.png" alt="">
+            <a class="hipervinculoFooter poppins-thin" href="https://www.youtube.com/channel/UC-WbTwDeSmNaEr11ag3YZbw">Youtube</a>
+        </div>
     </footer>
     
 </body>
