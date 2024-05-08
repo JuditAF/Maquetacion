@@ -7,6 +7,7 @@
 main {
     display: flex;
     justify-content: center;
+    padding: 20rem;
 }
 
 h1 {
@@ -17,28 +18,21 @@ h1 {
 
 .cuadricula {
     height: 60vh;
-    width: 1300px;
+    width: 80vw;
     align-content: center;
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    grid-template-rows: repeat(2, 1fr);
-    /*grid-template-columns: 2fr 1fr 2fr;
-    grid-template-rows: 1fr 1fr;*/
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 2fr 1fr;
 }
 
 .A {
-    width: 500px;
-    height: 130%;
     background-color: greenyellow;
     color: white;
     font-size: x-large;
     text-align: center;
-    text-shadow: crimson;
 }
 
 .B {
-    width: 300px;
-    height: 130%;
     background-color: black;
     color: white;
     font-size: x-large;
@@ -46,8 +40,6 @@ h1 {
 }
 
 .C {
-    width: 500px;
-    height: 130%;
     background-color: greenyellow;
     color: white;
     font-size: x-large;
@@ -55,8 +47,6 @@ h1 {
 }
 
 .D {
-    width: 500px;
-    height: 70%;
     background-color: black;
     color: white;
     font-size: x-large;
@@ -64,8 +54,6 @@ h1 {
 }
 
 .E {
-    width: 300px;
-    height: 70%;
     background-color: greenyellow;
     color: white;
     font-size: x-large;
@@ -73,8 +61,6 @@ h1 {
 }
 
 .F {
-    width: 500px;
-    height: 70%;
     background-color: black;
     color: white;
     font-size: x-large;
