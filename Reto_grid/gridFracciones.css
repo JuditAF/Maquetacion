@@ -7,6 +7,7 @@
 main {
     display: flex;
     justify-content: center;
+    padding: 20rem;
 }
 
 h1 {
@@ -18,6 +19,7 @@ h1 {
 .cuadricula {
     height: 60vh;
     width: 80vw;
+<<<<<<< HEAD
     border: 2px solid palevioletred;
     align-content: center;
     display: grid;
@@ -25,21 +27,22 @@ h1 {
     grid-template-rows: 1fr 1fr;
     /*grid-template-columns: 2fr 1fr 2fr;
     grid-template-rows: 1fr 1fr;*/
+=======
+    align-content: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 2fr 1fr;
+>>>>>>> dia6
 }
 
 .A {
-    width: 500px;
-    height: 130%;
     background-color: greenyellow;
     color: white;
     font-size: x-large;
     text-align: center;
-    text-shadow: crimson;
 }
 
 .B {
-    width: 300px;
-    height: 130%;
     background-color: black;
     color: white;
     font-size: x-large;
@@ -47,8 +50,6 @@ h1 {
 }
 
 .C {
-    width: 500px;
-    height: 130%;
     background-color: greenyellow;
     color: white;
     font-size: x-large;
@@ -56,8 +57,6 @@ h1 {
 }
 
 .D {
-    width: 500px;
-    height: 70%;
     background-color: black;
     color: white;
     font-size: x-large;
@@ -65,8 +64,6 @@ h1 {
 }
 
 .E {
-    width: 300px;
-    height: 70%;
     background-color: greenyellow;
     color: white;
     font-size: x-large;
@@ -74,8 +71,6 @@ h1 {
 }
 
 .F {
-    width: 500px;
-    height: 70%;
     background-color: black;
     color: white;
     font-size: x-large;
