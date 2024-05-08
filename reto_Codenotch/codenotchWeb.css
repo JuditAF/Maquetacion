@@ -231,10 +231,6 @@ span {
 }
 
 .first {
-    /* display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center; */
     display: block;
 }
 
@@ -251,7 +247,6 @@ span {
     justify-content: flex-end;
     align-content: flex-end;
     align-items: flex-end;
-    background-color: brown;
 }
 
 .conoce {
@@ -481,7 +476,11 @@ a {
     width: 100%;
     margin: auto;
     font-family: sourceCodePro_Uniquifier;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 .grid-item {
@@ -545,11 +544,55 @@ hr {
 }
 
 .card-container {
+    width: 25vw;
+    padding: 2rem;
     display: grid;
-    grid-template-columns: 35% 1fr;
+    align-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 1rem;
 }
 
 .card-container li {
-    display: inline-block;
+    display: flex;
+    flex-wrap: row wrap;
+}
+
+.card {
+    display: grid;
+    gap: 2rem;
+    color: whitesmoke;
+}
+
+.card-time {
+    border: 2px solid #0505ab;
+    margin: 3rem;
+}
+
+.tarjeta {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#cursos {
+    width: 100vw;
+   background: url(../../Reto_CoedenotchWEb/imagenes/10-15-6-Evening.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-color: #7c7c7c;
+   background-blend-mode: multiply;
+}
+
+.bootcamp {
+    color: #20ddb0;
+    margin: 3rem;
+}
+
+.data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
 }
