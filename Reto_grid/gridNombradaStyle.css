@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 4vh;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadricula {
+    width: 90%;
+    height: 90%;
+}
+
+.header {
+    grid-column: left0/right0;
+    grid-row: top0/middle1;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    background:#05090f;
+    color: whitesmoke;
+}
+
+.cuerpo {
+    height: 100%;
+    display: grid;
+    grid-template-columns: [left0] 1fr [middle0] 1fr [middle1] 1fr [middle2] 1fr [right0];
+    grid-template-rows: [middle1] 1fr [middle2] 1fr [middle3] 1fr [middle4] 1fr [middle5] 1fr [middle6] 1fr[bottom0];
+}
+
+.contenedorazul {
+    grid-column: left0/middle2;
+    grid-row: middle1/middle6;
+    background: #1330e5;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido {
+    border: 3px solid whitesmoke;
+    width: 96%;
+    height: 18%;
+    padding: 3px;
+}
+
+#texto {
+    width: 100%;
+    height: 77%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.texto1 {
+    border: 3px solid whitesmoke;
+    width: 63%;
+    height: 95%;
+    padding: 3px;
+}
+
+.texto2 {
+    border: 3px solid whitesmoke;
+    width: 30%;
+    height: 95%;
+    padding: 3px;
+}
+
+.contenedorVerde {
+    grid-column: middle2/right0;
+    grid-row: middle1/middle6;
+    background: #04d29c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#menu {
+    border: 1vh solid #05090f;
+    width: 92%;
+    height: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+.menu {
+    border: 3px solid #05090f;
+    width: 92%;
+    height: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    background: #05090f;
+}
+
+.piePagina {
+    grid-column: left0/right0;
+    grid-row: middle6/bottom0;
+    background: #541c9c;
+    color:whitesmoke;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer {
+    border: 3px solid #05090f;
+    width: 49%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
