@@ -31,24 +31,65 @@ function recogerDatos() {
 let listaClientes = [];
 
 function filtrarInfo () {
-    for ( i=0; i < clientes.length; i++ ) {
-
-        if(clientes[i].arrivalContact == "galicia" || clientes[i].arrivalContact == "canarias" || clientes[i].arrivalContact == "mallorca") {
-            listaClientes.push(clientes[i].nameContact);
-        }
-    }
+    
     console.log(listaClientes);
     console.log(document.getElementById("info").innerHTML = listaClientes);
     return
     
 };
 
-function addTable () {
-    const form = document.getElementById("formularioClientes");
+function genera_tabla() {
+    // let formCl = document.getElementById("formularioClientes");
+    // let tabla = document.getElementById("infoRecibida");
+    let tblBody = document.getElementById("infoTabla");
+    let formCl = document.getElementById("formularioClientes");
+    
+    for (let i = 0; i < 2; i++) {
+        let fila = document.createElement("tr");
 
-    form.addEventListener("submit", function (event) {
-        event.preventDefault();
-        let transactionFormData = new FormData (form)
-    })
-};
+        for (let j = 0;  j < listaClientes.length; j++) {
+            // Crea un elemento <td> y un nodo de texto, haz que el nodo de
+            // texto sea el contenido de <td>, ubica el elemento <td> al final
+            // de la hilera de la tabla
+            listaClientes.map(contacto)
+            let celda = document.createElement("td");
+            let textoCelda = document.createTextNode(
+              "celda en la hilera " + i + ", columna " + j,
+            );
+            celda.appendChild(textoCelda);
+            fila.appendChild(celda);
+          }
+      
+          // agrega la hilera al final de la tabla (al final del elemento tblbody)
+          tblBody.appendChild(fila);
+        }
+
+         // posiciona el <tbody> debajo del elemento <table>
+//   tabla.appendChild(tblBody);
+  // appends <table> into <body>
+  infoTabla.appendChild(tabla);
+  // modifica el atributo "border" de la tabla y lo fija a "2";
+  tabla.setAttribute("border", "2");
+
+}
+
+// function addTable () {
+//     const tabla = document.getElementById(infoRecibida);
+//     const lista = [...listaClientes];
+
+//     listaClientes.map
+//     for ( i=0; i < listaClientes.length; i++ ) {
+
+//         for ( i=0; i < listaClientes.length; i++ )
+//     }
+    
+// }
+// function addTable () {
+//     const formCl = document.getElementById("formularioClientes");
+
+//     form.addEventListener("onclick", function (event) {
+//         event.preventDefault();
+//         let transactionFormData = new FormData (form)
+//     })
+// };
    
