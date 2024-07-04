@@ -497,7 +497,198 @@ form {
 
 .poppins-bold {
     font-family: "Poppins", sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     font-style: normal;
     color:#20ddb0;
+}
+
+/* elementos cursos y equipo */
+
+.cabeceraContacto {
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 6rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: max-content;
+    justify-content: center;
+    align-content: center;
+}
+
+.cabeceraContacto h2 {
+    font-size: 4rem;
+    font-weight: 100;
+    letter-spacing: 100;
+}
+
+.cabeceraContacto span {
+    background-color: #0505ab;
+    color: whitesmoke;
+}
+
+.cabeceraContacto button {
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.cajaContenido {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cajaContenido img {
+    width: 850px;
+}
+
+.cajaContenido p {
+    font-size: 2rem;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+} 
+
+.grid-container2 {
+    width: 100%;
+    margin: auto;
+    font-family: sourceCodePro_Uniquifier;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.grid-item h3 {
+    font-size: 3rem;
+}
+
+.grid-item p {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.grid-container {
+    width: 100%;
+    margin: auto;
+    font-family: sourceCodePro_Uniquifier;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+}
+
+.grid-item {
+    width: 100%;
+    margin: 3rem;
+    display: grid;
+}
+
+.grid-container img {
+    width: 4rem;
+    display: flex;
+}
+
+.item {
+    display: flex;
+}
+
+.profesor {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.grid-item img {
+    width: 99vw;
+}
+
+h3 {
+    margin: 3rem;
+}
+
+.ident {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    padding-left: 20rem;
+}
+
+hr {
+    height: 10px;
+    background-color: #0505ab;
+}
+
+.card-container {
+    width: 25vw;
+    padding: 2rem;
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.card-container li {
+    display: flex;
+    flex-wrap: row wrap;
+}
+
+.card {
+    display: grid;
+    gap: 2rem;
+    color: whitesmoke;
+}
+
+.card img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.card p {
+    font-size: 2rem;
+}
+
+.card-time {
+    border: 2px solid #0505ab;
+    margin: 3rem;
+}
+
+.tarjeta {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cursos {
+   width: 100%;
+   background: url(./imagenes/10-15-6-Evening.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-color: #7c7c7c;
+   background-blend-mode: multiply;
+}
+
+.cursos h2 {
+    font-size: 3rem;
+}
+
+.bootcamp {
+    color: #20ddb0;
+    margin: 3rem;
+}
+
+.data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
 }
