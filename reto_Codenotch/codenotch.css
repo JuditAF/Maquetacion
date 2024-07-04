@@ -399,6 +399,55 @@ footer {
     color: black;
 }
 
+/* formulario */
+
+#formulario {
+    width: 100vw;
+    margin-top: 6rem;
+    padding-bottom: 2rem;
+    display: grid;
+}
+
+form {
+    padding: 4vh;
+    display: grid;
+    grid-template-columns: max-content;
+    justify-content: center;
+}
+
+.field {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin: 0.5rem;
+}
+
+.field label {
+    font-size: 3rem;
+    margin-bottom: 2vh;
+}
+
+.field input {
+    font-size: 2rem;
+    height: 3rem;
+    padding-left: 1rem;
+}
+
+.field select {
+    font-size: 2rem;
+    height: 3rem;
+    padding-left: 3rem;
+}
+
+#observaciones {
+    font-size: 2rem;
+    height: 8rem;
+    padding-left: 1rem;
+}
+
+/* formulario */
+
 /* elementos del HTML */
 
 .button {
