@@ -1,0 +1,454 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    background-color: #f1f1f2;
+    text-decoration: none;
+    padding:2rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#logotipo {
+   width: 7rem;
+}
+
+h1 {
+    height: 4vh;
+    width: 100%;
+    font-size: 2vh;
+    color: #0808fa;
+    text-shadow: #7c7cfc 3px 6px 5px;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* BARRA NAVEGACIÓN */
+
+.barraNavegacion {
+    font-size: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5rem 2rem 0rem;
+    text-decoration: none;
+    font-size: 2rem;
+    text-decoration: wavy;
+    color: #f3f3f3;
+}
+
+.barraNavegacion ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.barraNavegacion li {
+    margin-right: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5rem 2rem;
+    text-decoration: none;
+}
+
+.barraNavegacion li:last-child {
+    background: #20ddb0;
+    border-radius: 1rem;
+    border: 2px solid #20ddb0;
+}
+
+.barraNavegacion li:last-child:hover {
+    background-color: transparent;
+    border: 2px solid #20ddb0;
+    border-radius: 1rem;
+}
+
+.barraNavegacion a {
+    font-weight: 300;
+}
+
+.barraNavegacion a:hover {
+    color: #0808fa;
+}
+
+.hiperVinculo {
+    text-decoration: none;
+    color: #7c7c7c;
+}
+
+/* MAIN */
+
+h2 {
+    padding: 2rem;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #dbd5f9;
+}
+
+/* MAIN CODENOTCH_WEB */
+
+.cuerpo {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 5rem;
+}
+
+.quineSomos {
+    background-color: #bcc7e6;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.aside img {
+    padding-left: 2rem;
+    margin-left: 3rem;
+    width: 650px; 
+    height: 380px;
+}
+
+.cajaTitulo {
+    margin-left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+span {
+    color: #0808fa;
+    font-weight: 400;
+}
+
+.tituloSeccion {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    font-size: 2rem;
+}
+
+.analisis {
+    display: inline-block;
+}
+
+.empresas {
+    width: 95vw;
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.empresas img {
+    border-radius: 50%;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex flex-start;
+    filter: grayscale(1);
+}
+
+#opinion {
+    padding: 0;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+#plantilla {
+    width: 100vw;
+    background: url(../../Reto_CoedenotchWEb/imagenes/the-office-zoom.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #7c7c7c;
+    background-blend-mode: multiply;
+ }
+
+ .finLP {
+    display: block;
+}
+
+.first {
+    display: block;
+}
+
+.conoceA {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40rem;
+    margin-right: 3rem;
+}
+
+.conoce {
+    display: block;
+}
+
+.second img {
+    width: 10rem;
+}
+
+.tech {
+    display: block;
+}
+
+.tech img {
+    width: 25rem;
+}
+
+.why {
+    display: flex;
+    justify-content: center;
+}
+
+.xWhy {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    align-items: center;
+    color: whitesmoke;
+    margin-right: 10rem;
+}
+
+.xWhy p {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.str {
+    color: #20ddb0; 
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+#phone {
+    width: 45rem;
+}
+
+.bann {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cajaSeccion {
+    border: 1px solid #0808fa;
+    width: 20rem;
+    height: 50rem;
+    background-color: #0808fa;
+}
+
+.companyIdentity {
+    width: 100vw;
+    background: url(./imagenes/image1codenotch-scaled.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #7c7c7c;
+    background-blend-mode: multiply;
+}
+
+.companyIdentity p {
+ color: whitesmoke;
+}
+
+.second {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+.conoce {
+    display: block;
+}
+
+.conoce button {
+    width: 20rem;
+    height: 3.5rem;
+}
+
+/* FOOTER */
+
+.hipervinculoFooter {
+    text-decoration: none;
+    color: #f1f1f2;
+}
+
+footer {
+    background-color: #0505ab;
+    width: 100%;
+    align-items: center;
+}
+
+.navFooter {
+    font-size: 1.5rem;
+    display: inline-flexbox;
+    padding: .5rem .5rem;
+}
+
+.navFooter a:hover {
+    color: #20ddb0;
+    font-size: 120%;
+}
+
+.imgFooter {
+    width: 3rem;
+    height: 3rem;
+}
+
+.contact {
+    display: inline-block;
+    color: #f1f1f2;
+    padding: 2rem;
+}
+
+.imgContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto {
+    width: 93vw;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button a {
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    font-weight: 100;
+}
+
+#contact img {
+    width: 5rem;
+}
+
+#tlf {
+    display: inline-flex;
+    margin-right: 2rem;
+}
+
+#tlf img {
+    width: 2rem;
+}
+
+.derechos {
+    display: flex;
+    justify-content: center;
+    margin-bottom: .2rem;
+}
+
+.rrhh {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5rem 2rem;
+    margin-bottom: 4rem;
+    text-decoration: none;
+}
+
+.pie {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+}
+
+/* elementos del HTML */
+
+.button {
+    width: 24rem;
+    height: 4rem;
+    margin: 3rem;
+    background-color: #0505ab;
+    border: 1px solid #070772;
+    border-radius: 15px;
+    box-shadow: #2e2e50 1px 2px 4px;
+    box-sizing: border-box;
+    color: whitesmoke;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 16px;
+    min-height: 40px;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricPrecision;
+    text-transform:none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    transition: background-color 1s;
+}
+
+.button:hover,
+.button:focus,
+  
+.button:active {
+    background-color: #7c7cfc;
+    border-color: #5252a5;
+    box-shadow: #42425e;
+    background-position: 0 0;
+    transition: none;
+}
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color:#20ddb0;
+}
