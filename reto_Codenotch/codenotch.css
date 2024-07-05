@@ -22,7 +22,7 @@ header {
     width: 100%;
     background-color: #f1f1f2;
     text-decoration: none;
-    padding:2rem;
+    padding: 2rem;
 }
 
 .logo {
@@ -32,7 +32,7 @@ header {
 }
 
 #logotipo {
-   width: 7rem;
+    width: 7rem;
 }
 
 h1 {
@@ -133,7 +133,7 @@ main {
 .aside img {
     padding-left: 2rem;
     margin-left: 3rem;
-    width: 650px; 
+    width: 650px;
     height: 380px;
 }
 
@@ -151,10 +151,10 @@ span {
 }
 
 .tituloSeccion {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     font-size: 2rem;
 }
 
@@ -201,9 +201,9 @@ span {
     background-size: cover;
     background-color: #7c7c7c;
     background-blend-mode: multiply;
- }
+}
 
- .finLP {
+.finLP {
     display: block;
 }
 
@@ -254,7 +254,7 @@ span {
 }
 
 .str {
-    color: #20ddb0; 
+    color: #20ddb0;
     font-size: 3rem;
     margin-bottom: 3rem;
 }
@@ -274,20 +274,6 @@ span {
     width: 20rem;
     height: 50rem;
     background-color: #0808fa;
-}
-
-.companyIdentity {
-    width: 100vw;
-    background: url(./imagenes/image1codenotch-scaled.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #7c7c7c;
-    background-blend-mode: multiply;
-}
-
-.companyIdentity p {
- color: whitesmoke;
 }
 
 .second {
@@ -359,7 +345,7 @@ footer {
 .button a {
     color: whitesmoke;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 100;
 }
 
@@ -470,7 +456,7 @@ form {
     padding: 12px 14px;
     text-align: center;
     text-rendering: geometricPrecision;
-    text-transform:none;
+    text-transform: none;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
@@ -480,7 +466,7 @@ form {
 
 .button:hover,
 .button:focus,
-  
+
 .button:active {
     background-color: #7c7cfc;
     border-color: #5252a5;
@@ -499,7 +485,7 @@ form {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
-    color:#20ddb0;
+    color: #20ddb0;
 }
 
 /* elementos cursos y equipo */
@@ -547,78 +533,8 @@ form {
     font-size: 2rem;
 }
 
-a {
-    color: whitesmoke;
-    text-decoration: none;
-} 
-
-.grid-container2 {
-    width: 100%;
-    margin: auto;
-    font-family: sourceCodePro_Uniquifier;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-
-.grid-item h3 {
-    font-size: 3rem;
-}
-
-.grid-item p {
-    font-size: 2rem;
-    margin: 1rem;
-}
-
-.grid-container {
-    width: 100%;
-    margin: auto;
-    font-family: sourceCodePro_Uniquifier;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 1.5rem;
-    row-gap: 1.5rem;
-}
-
-.grid-item {
-    width: 100%;
-    margin: 3rem;
-    display: grid;
-}
-
-.grid-container img {
-    width: 4rem;
-    display: flex;
-}
-
-.item {
-    display: flex;
-}
-
-.profesor {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-}
-
-.grid-item img {
-    width: 99vw;
-}
-
 h3 {
     margin: 3rem;
-}
-
-.ident {
-    width: 90vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 1.5rem;
-    row-gap: 1.5rem;
-    padding-left: 20rem;
 }
 
 hr {
@@ -667,13 +583,13 @@ hr {
 }
 
 .cursos {
-   width: 100%;
-   background: url(./imagenes/10-15-6-Evening.jpg);
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-color: #7c7c7c;
-   background-blend-mode: multiply;
+    width: 100%;
+    background: url(./imagenes/10-15-6-Evening.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #7c7c7c;
+    background-blend-mode: multiply;
 }
 
 .cursos h2 {
@@ -691,4 +607,154 @@ hr {
     justify-content: space-around;
     align-items: center;
     align-content: center;
+}
+
+.companyIdentity {
+    width: 100%;
+    background: url(./imagenes/image1codenotch-scaled.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #7c7c7c;
+    background-blend-mode: multiply;
+}
+
+.ident {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    padding-left: 6rem;
+}
+
+.ident p {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 100;
+}
+
+.companyIdentity p {
+    color: whitesmoke;
+}
+
+.grid-item img {
+    width: 99vw;
+}
+
+.grid-container {
+    width: 100%;
+    margin: auto;
+    font-family: sourceCodePro_Uniquifier;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.grid-container2 {
+    width: 100%;
+    margin: auto;
+    font-family: sourceCodePro_Uniquifier;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.grid-item h3 {
+    font-size: 2rem;
+}
+
+.grid-item p {
+    font-size: 2rem;
+}
+
+.grid-container {
+    width: 100%;
+    margin: auto;
+    font-family: sourceCodePro_Uniquifier;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+}
+
+.grid-item {
+    width: 100%;
+    /* margin: 3rem; */
+    display: grid;
+}
+
+.grid-container img {
+    width: 4rem;
+    display: flex;
+}
+
+.item {
+    display: flex;
+}
+
+.item img {
+    width: 15rem;
+}
+
+.docentes h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 100;
+}
+
+.docentes h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 100;
+    color: #20ddb0;
+}
+
+.grid-container h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 100;
+    color: #20ddb0;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.profesor {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.profesor figcaption {
+    font-size: 1.8rem;
+}
+
+.profesor p {
+    font-size: 1.6rem;
+}
+
+#data {
+    width: 40rem;
+    height: 25rem;
+}
+
+.llamada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.analitic {
+    margin-left: 4rem;
+}
+
+.analitic p {
+    width: 30rem;
 }
